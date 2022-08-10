@@ -43,7 +43,7 @@ architecture behav of product_dense_ap_fixed_ap_fixed_ap_fixed_s is
 
 
 begin
-    myproject_mul_mul_16s_16s_18_1_1_U9 : component myproject_mul_mul_16s_16s_18_1_1
+    myproject_mul_mul_16s_16s_18_1_1_U23 : component myproject_mul_mul_16s_16s_18_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

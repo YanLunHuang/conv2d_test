@@ -44,8 +44,6 @@ void load_weights_from_txt(T *w, const char* fname) {
     std::string full_path = std::string(WEIGHTS_DIR) + "/" + std::string(fname);
     std::ifstream infile(full_path.c_str(), std::ios::binary);
 
-	#pragma HLS bind_storage variable=w type=RAM_S2P impl=bram
-
     if (infile.fail()) {
         std::cerr << "ERROR: file " << std::string(fname) << " does not exist" << std::endl;
         exit(1);
@@ -303,6 +301,21 @@ void copy_data(std::vector<src_T> src, hls::stream<dst_T> &dst) {
 }
 
 template<class src_T, class dst_T, size_t OFFSET, size_t SIZE>
+void copy_data_v2(std::vector<src_T> src, hls::stream<dst_T> dst[8]) {
+    typename std::vector<src_T>::const_iterator in_begin = src.cbegin() + OFFSET;
+    typename std::vector<src_T>::const_iterator in_end = in_begin + SIZE;
+
+    size_t i_pack = 0;
+	dst_T dst_pack;
+    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+		dst_pack = dst_T(*i);
+        dst[i_pack++].write(dst_pack);
+		if (i_pack == 8)i_pack = 0;
+		//std::cout <<i_pack<<std::endl;
+    }
+}
+
+template<class src_T, class dst_T, size_t OFFSET, size_t SIZE>
 void copy_data_me(std::vector<src_T> src, hls::stream<dst_T> &dst) {
     typename std::vector<src_T>::const_iterator in_begin = src.cbegin() + OFFSET;
     typename std::vector<src_T>::const_iterator in_end = in_begin + SIZE;
@@ -340,13 +353,15 @@ void print_result(res_T result[SIZE], std::ostream &out, bool keep = false) {
 
 
 template<class res_T, size_t SIZE>
-void print_result_me(hls::stream<res_T> &result, std::ostream &out, bool keep = false) {
-    for(int i = 0; i < SIZE; i++) {
-        res_T res_pack = result.read();
+void print_result_me(hls::stream<res_T> result[8], std::ostream &out, bool keep = false) {
+  for(int j = 0; j < 9; j++) {
+	for(int i = 0; i < 8; i++) {
+        res_T res_pack = result[i].read();
         out << res_pack << " ";
-        if (keep) result.write(res_pack);
-		if(i == 255)out << std::endl;
+        if (keep) result[i].write(res_pack);
+		if(i == 7)out << std::endl;
     }
+  }
 }
 
 template<class res_T, size_t SIZE>

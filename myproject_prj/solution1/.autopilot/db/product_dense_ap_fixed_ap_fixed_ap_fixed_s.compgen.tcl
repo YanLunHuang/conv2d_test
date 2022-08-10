@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 9
+set id 23
 set name myproject_mul_mul_16s_16s_18_1_1
 set corename simcore_mul
 set op mul
@@ -86,7 +86,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 11 \
+    id 25 \
     name a_V \
     type other \
     dir I \
@@ -101,7 +101,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 12 \
+    id 26 \
     name w_V \
     type other \
     dir I \

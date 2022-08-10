@@ -22,18 +22,16 @@
 #include "parameters.h"
 
 
-
-
 void myproject(
-    hls::stream<input_t> &input_1,
-    hls::stream<layer2_t> &layer2_out,
+    hls::stream<input_t> input_1[8],
+    hls::stream<layer2_t> layer2_out[8],
     unsigned short &const_size_in_1,
     unsigned short &const_size_out_1
 ) {
 
     //hls-fpga-machine-learning insert IO
     #pragma HLS INTERFACE axis port=input_1,layer2_out 
-
+    #pragma HLS DATAFLOW 
 
     const_size_in_1 = N_INPUT_1_1*N_INPUT_2_1*N_INPUT_3_1;
     const_size_out_1 = OUT_HEIGHT_2*OUT_WIDTH_2*N_FILT_2;
@@ -53,9 +51,8 @@ void myproject(
     // ****************************************
 
     //hls-fpga-machine-learning insert layers
-    #pragma HLS DATAFLOW 
-	
-    hls::stream<layer4_t> layer4_out("layer4_out");
+
+    hls::stream<layer4_t> layer4_out[N_CHAN_4];
     #pragma HLS STREAM variable=layer4_out depth=25
     nnet::zeropad2d_cl_me<input_t, layer4_t, config4>(input_1, layer4_out); // zp2d_conv2d
 

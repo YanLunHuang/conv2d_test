@@ -124,8 +124,8 @@ void conv_2d_large_cl_nopad_pad_me(
 			    //hls::stream<res_T>  res [CONFIG_T::n_filt_in], 
 			    //typename CONFIG_T::weight_t weights[CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::n_filt/CONFIG_T::mult_config::merge_factor],
 			    //typename CONFIG_T::bias_t   biases[CONFIG_T::n_filt]
-         hls::stream<data_T> &data,
-         hls::stream<res_T>  &res,
+         hls::stream<data_T> data[CONFIG_T::n_chan],
+         hls::stream<res_T> res[CONFIG_T::n_filt],
          typename CONFIG_T::weight_t weights[CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::n_filt],
          typename CONFIG_T::bias_t   biases[CONFIG_T::n_filt]               
 			    ) {
@@ -168,7 +168,7 @@ void conv_2d_large_cl_nopad_pad_me(
 
 		for(int i1 = 0; i1 < CONFIG_T::n_chan; i1++) { 
 		  #pragma HLS UNROLL
-		  tmpdata[i1] = data.read();
+		  tmpdata[i1] = data[i1].read();
 		}
 		nnet::cnnshift_arr<data_T,res_T,  CONFIG_T>(tmpdata, layer_in_row, layer_in);
 		
@@ -187,7 +187,7 @@ void conv_2d_large_cl_nopad_pad_me(
 			CastLoop: for (unsigned i_ic = 0; i_ic < CONFIG_T::n_filt; i_ic++) {
 				#pragma HLS UNROLL
 				res_pack = layer_out[i_ic];
-				res.write(res_pack);
+				res[i_ic].write(res_pack);
 			}
 
 			// Write output to stream when output ready
@@ -373,8 +373,8 @@ void conv_2d_buffer_cl(
 
 template <class data_T, class res_T, typename CONFIG_T>
 void conv_2d_cl_me(
-    hls::stream<data_T> &data,
-    hls::stream<res_T>  &res,
+    hls::stream<data_T> data[CONFIG_T::n_chan],
+    hls::stream<res_T>  res[CONFIG_T::n_filt],
     typename CONFIG_T::weight_t weights[CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::n_filt],
     typename CONFIG_T::bias_t   biases[CONFIG_T::n_filt])
 {

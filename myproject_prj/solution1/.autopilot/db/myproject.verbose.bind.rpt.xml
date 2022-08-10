@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myproject'" level="0">
-<item name = "Date">Wed Jul  6 19:04:54 2022
+<item name = "Date">Thu Jul 14 10:52:59 2022
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">243, 2293, 1.215 us, 11.465 us, 227, 2277, dataflow</column>
+<column name="">103, 1978, 0.515 us, 9.890 us, 102, 1977, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_fu_112">conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s, 226, 2276, 1.130 us, 11.380 us, 226, 2276, none</column>
-<column name="grp_zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s_fu_163">zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s, 203, 203, 1.015 us, 1.015 us, 203, 203, none</column>
-<column name="call_ln0_Block_proc_fu_170">Block_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_fu_280">conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s, 101, 1976, 0.505 us, 9.880 us, 101, 1976, none</column>
+<column name="grp_zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s_fu_352">zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s, 28, 28, 0.140 us, 0.140 us, 28, 28, none</column>
+<column name="call_ln0_Block_proc_fu_380">Block_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

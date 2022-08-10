@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s'" level="0">
-<item name = "Date">Wed Jul  6 19:04:53 2022
+<item name = "Date">Thu Jul 14 10:52:58 2022
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">203, 203, 1.015 us, 1.015 us, 203, 203, none</column>
+<column name="">28, 28, 0.140 us, 0.140 us, 28, 28, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,10 +35,10 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- PadTopWidth">40, 40, 8, -, -, 5, no</column>
-<column name="- PadMain">120, 120, 40, -, -, 3, no</column>
-<column name=" + CopyMain">24, 24, 8, -, -, 3, no</column>
-<column name="- PadBottomWidth">40, 40, 8, -, -, 5, no</column>
+<column name="- PadTopWidth">5, 5, 1, -, -, 5, no</column>
+<column name="- PadMain">15, 15, 5, -, -, 3, no</column>
+<column name=" + CopyMain">3, 3, 1, -, -, 3, no</column>
+<column name="- PadBottomWidth">5, 5, 1, -, -, 5, no</column>
 </table>
 </item>
 </section>

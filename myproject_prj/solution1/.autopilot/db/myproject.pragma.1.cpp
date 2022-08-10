@@ -30467,8 +30467,8 @@ typedef ap_fixed<16,14> layer2_t;
 
 
 void myproject(
-    hls::stream<input_t> &input_1,
-    hls::stream<layer2_t> &layer2_out,
+    hls::stream<input_t> input_1[8],
+    hls::stream<layer2_t> layer2_out[8],
     unsigned short &const_size_in_1,
     unsigned short &const_size_out_1
 );
@@ -57866,7 +57866,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 namespace nnet {
-# 282 "firmware/nnet_utils/nnet_helpers.h"
+# 280 "firmware/nnet_utils/nnet_helpers.h"
 template<class src_T, class dst_T, size_t OFFSET, size_t SIZE>
 void copy_data(std::vector<src_T> src, dst_T dst[SIZE]) {
     typename std::vector<src_T>::const_iterator in_begin = src.cbegin() + OFFSET;
@@ -57887,6 +57887,21 @@ void copy_data(std::vector<src_T> src, hls::stream<dst_T> &dst) {
             i_pack = 0;
             dst.write(dst_pack);
         }
+    }
+}
+
+template<class src_T, class dst_T, size_t OFFSET, size_t SIZE>
+void copy_data_v2(std::vector<src_T> src, hls::stream<dst_T> dst[8]) {_ssdm_SpecArrayDimSize(dst, 8);
+    typename std::vector<src_T>::const_iterator in_begin = src.cbegin() + OFFSET;
+    typename std::vector<src_T>::const_iterator in_end = in_begin + SIZE;
+
+    size_t i_pack = 0;
+ dst_T dst_pack;
+    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+  dst_pack = dst_T(*i);
+        dst[i_pack++].write(dst_pack);
+  if (i_pack == 8)i_pack = 0;
+
     }
 }
 
@@ -57928,13 +57943,15 @@ void print_result(res_T result[SIZE], std::ostream &out, bool keep = false) {
 
 
 template<class res_T, size_t SIZE>
-void print_result_me(hls::stream<res_T> &result, std::ostream &out, bool keep = false) {
-    for(int i = 0; i < SIZE; i++) {
-        res_T res_pack = result.read();
+void print_result_me(hls::stream<res_T> result[8], std::ostream &out, bool keep = false) {_ssdm_SpecArrayDimSize(result, 8);
+  for(int j = 0; j < 9; j++) {
+ for(int i = 0; i < 8; i++) {
+        res_T res_pack = result[i].read();
         out << res_pack << " ";
-        if (keep) result.write(res_pack);
-  if(i == 255)out << std::endl;
+        if (keep) result[i].write(res_pack);
+  if(i == 7)out << std::endl;
     }
+  }
 }
 
 template<class res_T, size_t SIZE>
@@ -59956,8 +59973,8 @@ void conv_2d_large_cl_nopad_pad_me(
 
 
 
-         hls::stream<data_T> &data,
-         hls::stream<res_T> &res,
+         hls::stream<data_T> data[CONFIG_T::n_chan],
+         hls::stream<res_T> res[CONFIG_T::n_filt],
          typename CONFIG_T::weight_t weights[CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::n_filt],
          typename CONFIG_T::bias_t biases[CONFIG_T::n_filt]
        ) {
@@ -60006,7 +60023,7 @@ _ssdm_SpecConstant(&lShiftY);
 
   for(int i1 = 0; i1 < CONFIG_T::n_chan; i1++) {
 _ssdm_Unroll(0,0,0, "");
- tmpdata[i1] = data.read();
+ tmpdata[i1] = data[i1].read();
   }
   nnet::cnnshift_arr<data_T,res_T, CONFIG_T>(tmpdata, layer_in_row, layer_in);
 
@@ -60025,7 +60042,7 @@ _ssdm_InlineRegion(0, "");
    CastLoop: for (unsigned i_ic = 0; i_ic < CONFIG_T::n_filt; i_ic++) {
 _ssdm_Unroll(0,0,0, "");
  res_pack = layer_out[i_ic];
-    res.write(res_pack);
+    res[i_ic].write(res_pack);
    }
 
 
@@ -60199,8 +60216,8 @@ _ssdm_op_SpecPipeline(CONFIG_T::reuse_factor, 1, 1, 0, "");
 
 template <class data_T, class res_T, typename CONFIG_T>
 void conv_2d_cl_me(
-    hls::stream<data_T> &data,
-    hls::stream<res_T> &res,
+    hls::stream<data_T> data[CONFIG_T::n_chan],
+    hls::stream<res_T> res[CONFIG_T::n_filt],
     typename CONFIG_T::weight_t weights[CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::n_filt],
     typename CONFIG_T::bias_t biases[CONFIG_T::n_filt])
 {
@@ -60389,13 +60406,14 @@ _ssdm_Unroll(0,0,0, "");
 }
 
 template<class res_T, typename CONFIG_T>
-void fill_zero_me(hls::stream<res_T> &res) {
+void fill_zero_me(hls::stream<res_T> res[CONFIG_T::n_chan]) {
 _ssdm_InlineSelf(0, "");
  res_T res_part;
  for (int c = 0; c < CONFIG_T::n_chan; c++) {
 _ssdm_Unroll(0,0,0, "");
  res_part = 0;
-  res.write(res_part);
+
+  res[c].write(res_part);
     }
 }
 
@@ -60412,15 +60430,16 @@ _ssdm_Unroll(0,0,0, "");
 }
 
 template<class data_T, class res_T, typename CONFIG_T>
-void fill_data_me(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+void fill_data_me(hls::stream<data_T> data[CONFIG_T::n_chan], hls::stream<res_T> res[CONFIG_T::n_chan]) {
 _ssdm_InlineSelf(0, "");
  res_T res_part;
  data_T data_part;
     for (int c = 0; c < CONFIG_T::n_chan; c++) {
 _ssdm_Unroll(0,0,0, "");
- data_part = data.read();
+ data_part = data[c].read();
         res_part = data_part;
-  res.write(res_part);
+
+  res[c].write(res_part);
     }
 
 }
@@ -60476,8 +60495,8 @@ void zeropad2d_cl(
 
 template<class data_T, class res_T, typename CONFIG_T>
 void zeropad2d_cl_me(
-    hls::stream<data_T> &data,
-    hls::stream<res_T> &res
+    hls::stream<data_T> data[CONFIG_T::n_chan],
+    hls::stream<res_T> res[CONFIG_T::n_chan]
 ) {
 
     PadTop: for (int i = 0; i < CONFIG_T::pad_top; i++) {
@@ -60503,6 +60522,8 @@ void zeropad2d_cl_me(
             fill_zero_me<res_T, CONFIG_T>(res);
         }
     }
+
+ std::cout <<"finish zeropad"<<std::endl;
 }
 
 
@@ -60581,26 +60602,22 @@ const ap_uint<config2::filt_height * config2::filt_width> config2::pixels[] = {1
 # 23 "firmware/myproject.cpp" 2
 
 
-
-
 void myproject(
-    hls::stream<input_t> &input_1,
-    hls::stream<layer2_t> &layer2_out,
+    hls::stream<input_t> input_1[8],
+    hls::stream<layer2_t> layer2_out[8],
     unsigned short &const_size_in_1,
     unsigned short &const_size_out_1
-) {
+) {_ssdm_SpecArrayDimSize(input_1, 8);_ssdm_SpecArrayDimSize(layer2_out, 8);
 
 
-_ssdm_op_SpecInterface(&input_1, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");_ssdm_op_SpecInterface(&layer2_out, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-
+_ssdm_op_SpecInterface(input_1, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");_ssdm_op_SpecInterface(layer2_out, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecDataflowPipeline(-1, 0, "");
 
  const_size_in_1 = 3*3*8;
     const_size_out_1 = 3*3*8;
-# 56 "firmware/myproject.cpp"
-_ssdm_op_SpecDataflowPipeline(-1, 0, "");
-
- hls::stream<layer4_t> layer4_out("layer4_out");
-_ssdm_SpecStream( &layer4_out, 0, 25, "");
+# 55 "firmware/myproject.cpp"
+    hls::stream<layer4_t> layer4_out[8];
+_ssdm_SpecStream( layer4_out, 0, 25, "");
  nnet::zeropad2d_cl_me<input_t, layer4_t, config4>(input_1, layer4_out);
 
     nnet::conv_2d_cl_me<layer4_t, layer2_t, config2>(layer4_out, layer2_out, w2, b2);

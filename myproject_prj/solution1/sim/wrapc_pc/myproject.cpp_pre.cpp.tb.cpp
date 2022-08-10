@@ -2,13 +2,13 @@
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp"
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp"
-# 19 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp"
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.cpp"
+# 19 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.cpp"
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iostream" 1 3
 # 36 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iostream" 3
        
@@ -26414,10 +26414,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 20 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp" 2
+# 20 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.cpp" 2
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.h" 1
-# 23 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.h"
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.h" 1
+# 23 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.h"
 # 1 "/opt/Xilinx/Vivado/2019.2/include/ap_int.h" 1
 # 54 "/opt/Xilinx/Vivado/2019.2/include/ap_int.h"
 # 1 "/opt/Xilinx/Vivado/2019.2/include/ap_common.h" 1
@@ -65145,7 +65145,7 @@ inline bool operator!=(
 }
 # 399 "/opt/Xilinx/Vivado/2019.2/include/ap_fixed.h" 2
 # 368 "/opt/Xilinx/Vivado/2019.2/include/ap_int.h" 2
-# 24 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.h" 2
+# 24 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.h" 2
 
 # 1 "/opt/Xilinx/Vivado/2019.2/include/hls_stream.h" 1
 # 79 "/opt/Xilinx/Vivado/2019.2/include/hls_stream.h"
@@ -72449,16 +72449,16 @@ class stream
 };
 
 }
-# 26 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.h" 2
+# 26 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.h" 2
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/defines.h" 1
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/defines.h" 1
 
 
 
 # 1 "/opt/Xilinx/Vivado/2019.2/include/ap_int.h" 1
-# 5 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/defines.h" 2
+# 5 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/defines.h" 2
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 1
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_types.h" 1
 
 
 
@@ -72486,16 +72486,16 @@ extern void __assert (const char *__assertion, const char *__file, int __line)
 
 
 }
-# 5 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 2
+# 5 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_types.h" 2
 
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 1 3
 # 39 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
        
 # 40 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
-# 7 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 2
+# 7 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_types.h" 2
 
 
-# 8 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h"
+# 8 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_types.h"
 namespace nnet {
 
 
@@ -72519,17 +72519,17 @@ struct array {
             return *this;
 
         
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 3 4
+# 30 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_types.h" 3 4
        ((
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h"
+# 30 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_types.h"
        N == other.size && "Array sizes must match."
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 3 4
+# 30 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_types.h" 3 4
        ) ? static_cast<void> (0) : __assert_fail (
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h"
+# 30 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_types.h"
        "N == other.size && \"Array sizes must match.\""
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 3 4
-       , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h", 30, __PRETTY_FUNCTION__))
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h"
+# 30 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_types.h" 3 4
+       , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_types.h", 30, __PRETTY_FUNCTION__))
+# 30 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_types.h"
                                                            ;
 
         for (unsigned i = 0; i < N; i++) {
@@ -72541,43 +72541,43 @@ struct array {
 };
 
 }
-# 7 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/defines.h" 2
+# 7 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/defines.h" 2
 
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 1 3
 # 39 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
        
 # 40 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
-# 9 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/defines.h" 2
-# 22 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/defines.h"
+# 9 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/defines.h" 2
+# 22 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/defines.h"
 typedef ap_fixed<16,14> model_default_t;
 typedef ap_fixed<16,14> input_t;
 typedef ap_fixed<16,14> layer4_t;
 typedef ap_fixed<16,14> layer2_t;
-# 28 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.h" 2
+# 28 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.h" 2
 
 
 void myproject(
-    hls::stream<input_t> &input_1,
-    hls::stream<layer2_t> &layer2_out,
+    hls::stream<input_t> input_1[8],
+    hls::stream<layer2_t> layer2_out[8],
     unsigned short &const_size_in_1,
     unsigned short &const_size_out_1
 );
-# 22 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/parameters.h" 1
+# 22 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.cpp" 2
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/parameters.h" 1
 
 
 
 # 1 "/opt/Xilinx/Vivado/2019.2/include/ap_int.h" 1
-# 5 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/parameters.h" 2
+# 5 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/parameters.h" 2
 
 
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 1
-# 24 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 1
+# 24 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h"
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/stdlib.h" 1 3
-# 25 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 2
+# 25 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 2
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 1 3
-# 26 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 2
+# 26 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 2
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/fstream" 1 3
 # 36 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/fstream" 3
        
@@ -74419,7 +74419,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 1082 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/fstream" 2 3
-# 27 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 2
+# 27 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 2
 
 
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/map" 1 3
@@ -77625,12 +77625,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 63 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/map" 2 3
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 2
+# 30 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 2
 
 
 
 
-# 33 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 33 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h"
 namespace nnet {
 
 
@@ -77644,8 +77644,6 @@ void load_weights_from_txt(T *w, const char* fname) {
 
     std::string full_path = std::string("weights") + "/" + std::string(fname);
     std::ifstream infile(full_path.c_str(), std::ios::binary);
-
-#pragma HLS bind_storage variable=w type=RAM_S2P impl=bram
 
     if (infile.fail()) {
         std::cerr << "ERROR: file " << std::string(fname) << " does not exist" << std::endl;
@@ -77835,17 +77833,17 @@ void save_layer_output(data_T *data, const char *layer_name, size_t layer_size) 
         std::fstream out;
         out.open(filename.str(), std::ios::app);
         
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
+# 234 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 3 4
        ((
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 234 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h"
        out.is_open()
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
+# 234 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 3 4
        ) ? static_cast<void> (0) : __assert_fail (
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 234 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h"
        "out.is_open()"
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
-       , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h", 236, __PRETTY_FUNCTION__))
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 234 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 3 4
+       , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h", 234, __PRETTY_FUNCTION__))
+# 234 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h"
                             ;
         for(int i = 0; i < layer_size; i++) {
             out << float(data[i]) << " ";
@@ -77877,17 +77875,17 @@ void save_layer_output(hls::stream<data_T> &data, const char *layer_name, size_t
         std::fstream out;
         out.open(filename.str(), std::ios::app);
         
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
+# 264 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 3 4
        ((
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 264 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h"
        out.is_open()
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
+# 264 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 3 4
        ) ? static_cast<void> (0) : __assert_fail (
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 264 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h"
        "out.is_open()"
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
-       , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h", 266, __PRETTY_FUNCTION__))
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 264 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 3 4
+       , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h", 264, __PRETTY_FUNCTION__))
+# 264 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h"
                             ;
         for (size_t i = 0; i < layer_size / data_T::size; i++) {
             data_T ctype = data.read();
@@ -77924,6 +77922,21 @@ void copy_data(std::vector<src_T> src, hls::stream<dst_T> &dst) {
             i_pack = 0;
             dst.write(dst_pack);
         }
+    }
+}
+
+template<class src_T, class dst_T, size_t OFFSET, size_t SIZE>
+void copy_data_v2(std::vector<src_T> src, hls::stream<dst_T> dst[8]) {
+    typename std::vector<src_T>::const_iterator in_begin = src.cbegin() + OFFSET;
+    typename std::vector<src_T>::const_iterator in_end = in_begin + SIZE;
+
+    size_t i_pack = 0;
+ dst_T dst_pack;
+    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+  dst_pack = dst_T(*i);
+        dst[i_pack++].write(dst_pack);
+  if (i_pack == 8)i_pack = 0;
+
     }
 }
 
@@ -77965,13 +77978,15 @@ void print_result(res_T result[SIZE], std::ostream &out, bool keep = false) {
 
 
 template<class res_T, size_t SIZE>
-void print_result_me(hls::stream<res_T> &result, std::ostream &out, bool keep = false) {
-    for(int i = 0; i < SIZE; i++) {
-        res_T res_pack = result.read();
+void print_result_me(hls::stream<res_T> result[8], std::ostream &out, bool keep = false) {
+  for(int j = 0; j < 9; j++) {
+ for(int i = 0; i < 8; i++) {
+        res_T res_pack = result[i].read();
         out << res_pack << " ";
-        if (keep) result.write(res_pack);
-  if(i == 255)out << std::endl;
+        if (keep) result[i].write(res_pack);
+  if(i == 7)out << std::endl;
     }
+  }
 }
 
 template<class res_T, size_t SIZE>
@@ -78081,18 +78096,18 @@ constexpr int pow2(int x){
 }
 
 }
-# 9 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/parameters.h" 2
+# 9 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/parameters.h" 2
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d.h" 1
-# 23 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d.h"
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_common.h" 1
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_common.h"
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d.h" 1
+# 23 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d.h"
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_common.h" 1
+# 30 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_common.h"
 namespace nnet {
 
 
 enum io_type {io_parallel = 0, io_serial, io_stream};
 enum strategy { latency, resource };
-# 44 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_common.h"
+# 44 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_common.h"
  template<class T, int N, class Op>
  T reduce(const T* x, Op op)
  {
@@ -78148,8 +78163,8 @@ enum strategy { latency, resource };
  };
 
 }
-# 24 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d.h" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_latency.h" 1
+# 24 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d.h" 2
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_latency.h" 1
 
 
 
@@ -78158,7 +78173,7 @@ enum strategy { latency, resource };
 # 39 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 3
        
 # 40 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 3
-# 6 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_latency.h" 2
+# 6 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_latency.h" 2
 
 namespace nnet {
 
@@ -78538,27 +78553,27 @@ void pointwise_conv_2d_cl(
 }
 
 }
-# 25 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d.h" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_resource.h" 1
+# 25 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d.h" 2
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_resource.h" 1
 
 
 
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense.h" 1
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense.h" 1
 
 
 
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_mult.h" 1
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_mult.h" 1
 
 
 
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 1
-# 6 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_mult.h" 2
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_helpers.h" 1
+# 6 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_mult.h" 2
 
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 1 3
-# 8 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_mult.h" 2
+# 8 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_mult.h" 2
 
 namespace nnet {
 
@@ -78672,11 +78687,11 @@ cast(typename CONFIG_T::accum_t x){
 }
 
 }
-# 6 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense.h" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_latency.h" 1
-# 27 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_latency.h"
+# 6 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense.h" 2
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_latency.h" 1
+# 27 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_latency.h"
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 1 3
-# 28 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_latency.h" 2
+# 28 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_latency.h" 2
 
 namespace nnet {
 
@@ -78779,11 +78794,11 @@ void dense_latency(
 }
 
 }
-# 7 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense.h" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 1
-# 26 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 7 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense.h" 2
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 1
+# 26 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 1 3
-# 27 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 2
+# 27 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 2
 # 1 "/usr/include/assert.h" 1 3 4
 # 65 "/usr/include/assert.h" 3 4
 
@@ -78808,10 +78823,10 @@ extern void __assert (const char *__assertion, const char *__file, int __line)
 
 
 }
-# 28 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 2
+# 28 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 2
 
 
-# 29 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 29 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
 namespace nnet {
 
 template<class data_T, class weight_T, class ret_T>
@@ -78840,30 +78855,30 @@ void dense_resource_rf_leq_nin(
     const int nout = CONFIG_T::n_out;
 
     
-# 56 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 56 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ((
-# 56 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 56 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    (multiplier_limit % nout == 0 || rufactor >= nin) && "The current Reuse Factor is not allowed"
-# 56 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 56 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ) ? static_cast<void> (0) : __assert_fail (
-# 56 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 56 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    "(multiplier_limit % nout == 0 || rufactor >= nin) && \"The current Reuse Factor is not allowed\""
-# 56 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
-   , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h", 56, __PRETTY_FUNCTION__))
-# 56 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 56 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+   , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h", 56, __PRETTY_FUNCTION__))
+# 56 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
                                                                                                          ;
     
-# 57 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 57 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ((
-# 57 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 57 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    (multiplier_limit == block_factor) && "This function is correct only for RF <= N_IN"
-# 57 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 57 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ) ? static_cast<void> (0) : __assert_fail (
-# 57 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 57 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    "(multiplier_limit == block_factor) && \"This function is correct only for RF <= N_IN\""
-# 57 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
-   , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h", 57, __PRETTY_FUNCTION__))
-# 57 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 57 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+   , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h", 57, __PRETTY_FUNCTION__))
+# 57 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
                                                                                                ;
 
 #pragma HLS function_instantiate variable=weights,biases
@@ -78930,30 +78945,30 @@ void dense_resource_rf_gt_nin_rem0(
     const int nout = CONFIG_T::n_out;
 
     
-# 122 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 122 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ((
-# 122 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 122 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    (multiplier_limit % nout == 0 || rufactor >= nin) && "The current Reuse Factor is not allowed"
-# 122 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 122 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ) ? static_cast<void> (0) : __assert_fail (
-# 122 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 122 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    "(multiplier_limit % nout == 0 || rufactor >= nin) && \"The current Reuse Factor is not allowed\""
-# 122 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
-   , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h", 122, __PRETTY_FUNCTION__))
-# 122 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 122 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+   , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h", 122, __PRETTY_FUNCTION__))
+# 122 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
                                                                                                          ;
     
-# 123 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 123 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ((
-# 123 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 123 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    (rufactor > nin && rufactor % nin == 0) && "This function is correct only for RF > N_IN && RF % N_IN == 0"
-# 123 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 123 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ) ? static_cast<void> (0) : __assert_fail (
-# 123 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 123 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    "(rufactor > nin && rufactor % nin == 0) && \"This function is correct only for RF > N_IN && RF % N_IN == 0\""
-# 123 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
-   , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h", 123, __PRETTY_FUNCTION__))
-# 123 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 123 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+   , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h", 123, __PRETTY_FUNCTION__))
+# 123 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
                                                                                                                      ;
 
 #pragma HLS function_instantiate variable=weights,biases
@@ -79033,30 +79048,30 @@ void dense_resource_rf_gt_nin(
     const int nout = CONFIG_T::n_out;
 
     
-# 201 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 201 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ((
-# 201 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 201 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    (multiplier_limit % nout == 0 || rufactor >= nin) && "The current Reuse Factor is not allowed"
-# 201 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 201 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ) ? static_cast<void> (0) : __assert_fail (
-# 201 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 201 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    "(multiplier_limit % nout == 0 || rufactor >= nin) && \"The current Reuse Factor is not allowed\""
-# 201 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
-   , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h", 201, __PRETTY_FUNCTION__))
-# 201 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 201 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+   , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h", 201, __PRETTY_FUNCTION__))
+# 201 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
                                                                                                          ;
     
-# 202 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 202 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ((
-# 202 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 202 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    (rufactor > nin) && "This function is correct only for RF > N_IN"
-# 202 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+# 202 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
    ) ? static_cast<void> (0) : __assert_fail (
-# 202 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 202 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
    "(rufactor > nin) && \"This function is correct only for RF > N_IN\""
-# 202 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h" 3 4
-   , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h", 202, __PRETTY_FUNCTION__))
-# 202 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense_resource.h"
+# 202 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h" 3 4
+   , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h", 202, __PRETTY_FUNCTION__))
+# 202 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense_resource.h"
                                                                             ;
 
 #pragma HLS function_instantiate variable=weights,biases
@@ -79142,11 +79157,11 @@ void dense_resource(
 }
 
 }
-# 8 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense.h" 2
+# 8 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense.h" 2
 
 
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 1 3
-# 11 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_dense.h" 2
+# 11 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_dense.h" 2
 
 namespace nnet {
 
@@ -79189,7 +79204,7 @@ void dense(
 }
 
 }
-# 6 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_resource.h" 2
+# 6 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_resource.h" 2
 
 namespace nnet {
 
@@ -79400,12 +79415,12 @@ void conv_2d_resource_cl(
 }
 
 }
-# 26 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d.h" 2
+# 26 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d.h" 2
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 1 3
 # 39 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 3
        
 # 40 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib" 3
-# 27 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d.h" 2
+# 27 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d.h" 2
 
 namespace nnet {
 
@@ -79469,8 +79484,8 @@ void conv_2d_cl(
 }
 
 }
-# 11 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/parameters.h" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 1
+# 11 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/parameters.h" 2
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 1
 
 
 
@@ -79603,10 +79618,10 @@ class ap_shift_reg
   protected:
     __SHIFT_T__ Array[__SHIFT_DEPTH__];
 };
-# 5 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 2
+# 5 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 2
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv_stream.h" 1
-# 9 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv_stream.h"
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv_stream.h" 1
+# 9 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv_stream.h"
 namespace nnet {
 
 enum class conv_implementation { linebuffer=0, encoded=1};
@@ -79973,7 +79988,7 @@ void compute_output_buffer_1d(
 }
 
 }
-# 7 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 2
+# 7 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 2
 
 
 namespace nnet {
@@ -80006,30 +80021,30 @@ void conv_2d_encoded_cl(
     typename CONFIG_T::bias_t biases[CONFIG_T::n_filt])
 {
     
-# 38 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+# 38 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
    ((
-# 38 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 38 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
    CONFIG_T::pad_top == 0 && CONFIG_T::pad_bottom == 0 && CONFIG_T::pad_left == 0 && CONFIG_T::pad_right == 0
-# 38 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+# 38 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
    ) ? static_cast<void> (0) : __assert_fail (
-# 38 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 38 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
    "CONFIG_T::pad_top == 0 && CONFIG_T::pad_bottom == 0 && CONFIG_T::pad_left == 0 && CONFIG_T::pad_right == 0"
-# 38 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
-   , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h", 38, __PRETTY_FUNCTION__))
-# 38 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 38 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+   , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h", 38, __PRETTY_FUNCTION__))
+# 38 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
                                                                                                                      ;
     
-# 39 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+# 39 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
    ((
-# 39 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 39 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
    CONFIG_T::filt_height == CONFIG_T::filt_width
-# 39 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+# 39 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
    ) ? static_cast<void> (0) : __assert_fail (
-# 39 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 39 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
    "CONFIG_T::filt_height == CONFIG_T::filt_width"
-# 39 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
-   , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h", 39, __PRETTY_FUNCTION__))
-# 39 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 39 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+   , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h", 39, __PRETTY_FUNCTION__))
+# 39 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
                                                         ;
 
     hls::stream<typename data_T::value_type> data_window[CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan];
@@ -80118,24 +80133,24 @@ void conv_2d_large_cl_nopad_pad_me(
 
 
 
-         hls::stream<data_T> &data,
-         hls::stream<res_T> &res,
+         hls::stream<data_T> data[CONFIG_T::n_chan],
+         hls::stream<res_T> res[CONFIG_T::n_filt],
          typename CONFIG_T::weight_t weights[CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::n_filt],
          typename CONFIG_T::bias_t biases[CONFIG_T::n_filt]
        ) {
 
     
-# 133 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+# 133 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
    ((
-# 133 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 133 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
    CONFIG_T::pad_top == 0 && CONFIG_T::pad_bottom == 0 && CONFIG_T::pad_left == 0 && CONFIG_T::pad_right == 0
-# 133 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+# 133 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
    ) ? static_cast<void> (0) : __assert_fail (
-# 133 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 133 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
    "CONFIG_T::pad_top == 0 && CONFIG_T::pad_bottom == 0 && CONFIG_T::pad_left == 0 && CONFIG_T::pad_right == 0"
-# 133 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
-   , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h", 133, __PRETTY_FUNCTION__))
-# 133 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 133 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+   , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h", 133, __PRETTY_FUNCTION__))
+# 133 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
                                                                                                                      ;
     std::cout << "USE CONV2D LARGE"<< std::endl;
 
@@ -80174,7 +80189,7 @@ void conv_2d_large_cl_nopad_pad_me(
 
   for(int i1 = 0; i1 < CONFIG_T::n_chan; i1++) {
 #pragma HLS UNROLL
-    tmpdata[i1] = data.read();
+    tmpdata[i1] = data[i1].read();
   }
   nnet::cnnshift_arr<data_T,res_T, CONFIG_T>(tmpdata, layer_in_row, layer_in);
 
@@ -80193,7 +80208,7 @@ void conv_2d_large_cl_nopad_pad_me(
    CastLoop: for (unsigned i_ic = 0; i_ic < CONFIG_T::n_filt; i_ic++) {
 #pragma HLS UNROLL
     res_pack = layer_out[i_ic];
-    res.write(res_pack);
+    res[i_ic].write(res_pack);
    }
 
 
@@ -80218,7 +80233,7 @@ void conv_2d_large_cl_nopad_pad_me(
 
    sX = ((sX - lShiftX) == 0) ? sX - CONFIG_T::stride_width + 1 : sX + 1;
   }
-# 225 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 225 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
  }
 }
 
@@ -80237,17 +80252,17 @@ void conv_2d_large_cl_nopad_pad(
        ) {
 
     
-# 242 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+# 242 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
    ((
-# 242 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 242 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
    CONFIG_T::pad_top == 0 && CONFIG_T::pad_bottom == 0 && CONFIG_T::pad_left == 0 && CONFIG_T::pad_right == 0
-# 242 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+# 242 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
    ) ? static_cast<void> (0) : __assert_fail (
-# 242 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 242 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
    "CONFIG_T::pad_top == 0 && CONFIG_T::pad_bottom == 0 && CONFIG_T::pad_left == 0 && CONFIG_T::pad_right == 0"
-# 242 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
-   , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h", 242, __PRETTY_FUNCTION__))
-# 242 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 242 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+   , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h", 242, __PRETTY_FUNCTION__))
+# 242 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
                                                                                                                      ;
     std::cout << "USE CONV2D LARGE"<< std::endl;
 
@@ -80338,7 +80353,7 @@ void conv_2d_large_cl_nopad_pad(
 
    sX = ((sX - lShiftX) == 0) ? sX - CONFIG_T::stride_width + 1 : sX + 1;
   }
-# 342 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 342 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
  }
 }
 
@@ -80352,17 +80367,17 @@ void conv_2d_buffer_cl(
     typename CONFIG_T::bias_t biases[CONFIG_T::n_filt])
 {
     
-# 354 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+# 354 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
    ((
-# 354 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 354 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
    CONFIG_T::pad_top == 0 && CONFIG_T::pad_bottom == 0 && CONFIG_T::pad_left == 0 && CONFIG_T::pad_right == 0
-# 354 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+# 354 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
    ) ? static_cast<void> (0) : __assert_fail (
-# 354 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 354 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
    "CONFIG_T::pad_top == 0 && CONFIG_T::pad_bottom == 0 && CONFIG_T::pad_left == 0 && CONFIG_T::pad_right == 0"
-# 354 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
-   , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h", 354, __PRETTY_FUNCTION__))
-# 354 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_conv2d_stream.h"
+# 354 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h" 3 4
+   , "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h", 354, __PRETTY_FUNCTION__))
+# 354 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_conv2d_stream.h"
                                                                                                                      ;
 
     static ap_shift_reg<typename data_T::value_type, CONFIG_T::in_width> line_buffer[(CONFIG_T::filt_height - 1 > 1 ? CONFIG_T::filt_height - 1 : 1)][CONFIG_T::n_chan];
@@ -80385,8 +80400,8 @@ void conv_2d_buffer_cl(
 
 template <class data_T, class res_T, typename CONFIG_T>
 void conv_2d_cl_me(
-    hls::stream<data_T> &data,
-    hls::stream<res_T> &res,
+    hls::stream<data_T> data[CONFIG_T::n_chan],
+    hls::stream<res_T> res[CONFIG_T::n_filt],
     typename CONFIG_T::weight_t weights[CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::n_filt],
     typename CONFIG_T::bias_t biases[CONFIG_T::n_filt])
 {
@@ -80406,13 +80421,13 @@ void conv_2d_cl_me(
 }
 
 }
-# 12 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/parameters.h" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_padding.h" 1
+# 12 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/parameters.h" 2
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_padding.h" 1
 
 
 
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 1 3
-# 5 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_padding.h" 2
+# 5 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_padding.h" 2
 
 namespace nnet {
 
@@ -80555,13 +80570,13 @@ void zeropad2d_cl(
 }
 
 }
-# 13 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/parameters.h" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_padding_stream.h" 1
+# 13 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/parameters.h" 2
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_padding_stream.h" 1
 
 
 
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 1 3
-# 5 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_padding_stream.h" 2
+# 5 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/nnet_utils/nnet_padding_stream.h" 2
 
 namespace nnet {
 
@@ -80577,13 +80592,14 @@ void fill_zero(hls::stream<res_T> &res) {
 }
 
 template<class res_T, typename CONFIG_T>
-void fill_zero_me(hls::stream<res_T> &res) {
+void fill_zero_me(hls::stream<res_T> res[CONFIG_T::n_chan]) {
 #pragma HLS INLINE
     res_T res_part;
  for (int c = 0; c < CONFIG_T::n_chan; c++) {
 #pragma HLS UNROLL
   res_part = 0;
-  res.write(res_part);
+
+  res[c].write(res_part);
     }
 }
 
@@ -80600,15 +80616,16 @@ void fill_data(hls::stream<data_T> &data, hls::stream<res_T> &res) {
 }
 
 template<class data_T, class res_T, typename CONFIG_T>
-void fill_data_me(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+void fill_data_me(hls::stream<data_T> data[CONFIG_T::n_chan], hls::stream<res_T> res[CONFIG_T::n_chan]) {
 #pragma HLS INLINE
     res_T res_part;
  data_T data_part;
     for (int c = 0; c < CONFIG_T::n_chan; c++) {
 #pragma HLS UNROLL
-   data_part = data.read();
+   data_part = data[c].read();
         res_part = data_part;
-  res.write(res_part);
+
+  res[c].write(res_part);
     }
 
 }
@@ -80664,8 +80681,8 @@ void zeropad2d_cl(
 
 template<class data_T, class res_T, typename CONFIG_T>
 void zeropad2d_cl_me(
-    hls::stream<data_T> &data,
-    hls::stream<res_T> &res
+    hls::stream<data_T> data[CONFIG_T::n_chan],
+    hls::stream<res_T> res[CONFIG_T::n_chan]
 ) {
 
     PadTop: for (int i = 0; i < CONFIG_T::pad_top; i++) {
@@ -80691,23 +80708,25 @@ void zeropad2d_cl_me(
             fill_zero_me<res_T, CONFIG_T>(res);
         }
     }
+
+ std::cout <<"finish zeropad"<<std::endl;
 }
 
 
 
 
 }
-# 14 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/parameters.h" 2
+# 14 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/parameters.h" 2
 
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/weights/w2.h" 1
-# 10 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/weights/w2.h"
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/weights/w2.h" 1
+# 10 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/weights/w2.h"
 model_default_t w2[576];
-# 17 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/parameters.h" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/weights/b2.h" 1
-# 10 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/weights/b2.h"
+# 17 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/parameters.h" 2
+# 1 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/weights/b2.h" 1
+# 10 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/weights/b2.h"
 model_default_t b2[8];
-# 18 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/parameters.h" 2
+# 18 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/parameters.h" 2
 
 
 
@@ -80766,21 +80785,19 @@ struct config2 : nnet::conv2d_config {
     typedef config2_mult mult_config;
 };
 const ap_uint<config2::filt_height * config2::filt_width> config2::pixels[] = {1,3,7,6,4,9,27,63,54,36,73,219,511,438,292,72,216,504,432,288,64,192,448,384,256};
-# 23 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp" 2
-
-
+# 23 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.cpp" 2
 
 
 void myproject(
-    hls::stream<input_t> &input_1,
-    hls::stream<layer2_t> &layer2_out,
+    hls::stream<input_t> input_1[8],
+    hls::stream<layer2_t> layer2_out[8],
     unsigned short &const_size_in_1,
     unsigned short &const_size_out_1
 ) {
 
 
 #pragma HLS INTERFACE axis port=input_1,layer2_out
-
+#pragma HLS DATAFLOW
 
     const_size_in_1 = 3*3*8;
     const_size_out_1 = 3*3*8;
@@ -80793,16 +80810,8 @@ void myproject(
         nnet::load_weights_from_txt<model_default_t, 8>(b2, "b2.txt");
         loaded_weights = true;
     }
-
-
-
-
-
-
-
-#pragma HLS DATAFLOW
-
-    hls::stream<layer4_t> layer4_out("layer4_out");
+# 55 "/home/YL_HUANG/7_15/8filter/array_of_stream/firmware/myproject.cpp"
+    hls::stream<layer4_t> layer4_out[8];
 #pragma HLS STREAM variable=layer4_out depth=25
     nnet::zeropad2d_cl_me<input_t, layer4_t, config4>(input_1, layer4_out);
 

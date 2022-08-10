@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s'" level="0">
-<item name = "Date">Wed Jul  6 19:04:54 2022
+<item name = "Date">Thu Jul 14 10:52:58 2022
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -24,27 +24,27 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">226, 2276, 1.130 us, 11.380 us, 226, 2276, none</column>
+<column name="">101, 1976, 0.505 us, 9.880 us, 101, 1976, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="call_ret_cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_fu_332">cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
-<column name="tmpmult_0_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_370">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
-<column name="tmpmult_1_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_376">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
-<column name="tmpmult_2_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_382">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
-<column name="tmpmult_3_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_388">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
-<column name="tmpmult_4_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_394">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
-<column name="tmpmult_5_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_400">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
-<column name="tmpmult_6_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_406">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
-<column name="op_V_assign_2_0_7_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_412">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="call_ret_cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_fu_551">cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="tmpmult_0_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_590">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="tmpmult_1_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_596">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="tmpmult_2_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_602">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="tmpmult_3_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_608">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="tmpmult_4_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_614">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="tmpmult_5_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_620">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="tmpmult_6_V_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_626">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="op_V_assign_2_0_7_product_dense_ap_fixed_ap_fixed_ap_fixed_s_fu_632">product_dense_ap_fixed_ap_fixed_ap_fixed_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">225, 2275, 9 ~ 91, -, -, 25, no</column>
+<column name="- Loop 1">100, 1975, 4 ~ 79, -, -, 25, no</column>
 <column name=" + Loop 1.1">73, 73, 3, 1, 1, 72, yes</column>
 </table>
 </item>
