@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 6
+set ID 261
 set hasByteEnable 0
 set MemName cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layebkb
 set CoreName ShiftReg
@@ -96,7 +96,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 7 \
+    id 262 \
     name data_V_read \
     type other \
     dir I \
@@ -104,14 +104,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_V_read \
     op interface \
-    ports { data_V_read { I 128 vector } } \
+    ports { data_V_read { I 4096 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 8 \
+    id 263 \
     name output_V_read \
     type other \
     dir I \
@@ -119,7 +119,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_output_V_read \
     op interface \
-    ports { output_V_read { I 1152 vector } } \
+    ports { output_V_read { I 36864 vector } } \
 } "
 }
 
@@ -147,7 +147,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename ap_return \
     op interface \
-    ports { ap_return { O 1152 vector } } \
+    ports { ap_return { O 36864 vector } } \
 } "
 }
 

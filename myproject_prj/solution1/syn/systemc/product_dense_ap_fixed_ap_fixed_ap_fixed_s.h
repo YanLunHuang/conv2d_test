@@ -31,7 +31,7 @@ struct product_dense_ap_fixed_ap_fixed_ap_fixed_s : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    myproject_mul_mul_16s_16s_18_1_1<1,1,16,16,18>* myproject_mul_mul_16s_16s_18_1_1_U9;
+    myproject_mul_mul_16s_16s_18_1_1<1,1,16,16,18>* myproject_mul_mul_16s_16s_18_1_1_U264;
     sc_signal< sc_lv<18> > r_V_fu_41_p2;
     static const sc_logic ap_const_logic_1;
     static const bool ap_const_boolean_1;

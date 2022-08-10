@@ -28,7 +28,7 @@ module AESL_axi_s_input_1_V_V (
     reg input_1_V_V_TDATA_read_en;
     wire [16 - 1:0] input_1_V_V_TDATA_read_data;
     
-    fifo #(72, 16) fifo_input_1_V_V_TDATA (
+    fifo #(2304, 16) fifo_input_1_V_V_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(input_1_V_V_TDATA_write_en),
@@ -60,7 +60,7 @@ module AESL_axi_s_input_1_V_V (
         end
     endfunction
     
-    function [207:0] read_token(input integer fp);
+    function [223:0] read_token(input integer fp);
         integer ret;
         begin
             read_token = "";
@@ -69,8 +69,8 @@ module AESL_axi_s_input_1_V_V (
         end
     endfunction
     
-    function [207:0] rm_0x(input [207:0] token);
-        reg [207:0] token_tmp;
+    function [223:0] rm_0x(input [223:0] token);
+        reg [223:0] token_tmp;
         integer i;
         begin
             token_tmp = "";
@@ -88,11 +88,11 @@ module AESL_axi_s_input_1_V_V (
     
     initial begin : AXI_stream_driver_input_1_V_V_TDATA
         integer fp;
-        reg [207:0] token;
+        reg [223:0] token;
         reg [16 - 1:0] data;
-        reg [207:0] data_integer;
+        reg [223:0] data_integer;
         integer fp_ingress_status;
-        reg [207:0] token_ingress_status;
+        reg [223:0] token_ingress_status;
         reg [31:0] ingress_status;
         reg [8 * 5:1] str;
         integer ret;

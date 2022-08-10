@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s'" level="0">
-<item name = "Date">Wed Jul  6 19:04:53 2022
+<item name = "Date">Fri Jun 24 05:17:36 2022
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>

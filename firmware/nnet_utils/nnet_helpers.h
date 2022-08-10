@@ -44,8 +44,6 @@ void load_weights_from_txt(T *w, const char* fname) {
     std::string full_path = std::string(WEIGHTS_DIR) + "/" + std::string(fname);
     std::ifstream infile(full_path.c_str(), std::ios::binary);
 
-	#pragma HLS bind_storage variable=w type=RAM_S2P impl=bram
-
     if (infile.fail()) {
         std::cerr << "ERROR: file " << std::string(fname) << " does not exist" << std::endl;
         exit(1);
@@ -340,13 +338,15 @@ void print_result(res_T result[SIZE], std::ostream &out, bool keep = false) {
 
 
 template<class res_T, size_t SIZE>
-void print_result_me(hls::stream<res_T> &result, std::ostream &out, bool keep = false) {
-    for(int i = 0; i < SIZE; i++) {
-        res_T res_pack = result.read();
+void print_result_me(hls::stream<res_T> result[256], std::ostream &out, bool keep = false) {
+  for(int j = 0; j < 9; j++) {
+	for(int i = 0; i < 256; i++) {
+        res_T res_pack = result[i].read();
         out << res_pack << " ";
-        if (keep) result.write(res_pack);
+        if (keep) result[i].write(res_pack);
 		if(i == 255)out << std::endl;
     }
+  }
 }
 
 template<class res_T, size_t SIZE>

@@ -17,13 +17,14 @@ void fill_zero(hls::stream<res_T> &res) {
 }
 
 template<class res_T, typename CONFIG_T>
-void fill_zero_me(hls::stream<res_T> &res) {
+void fill_zero_me(hls::stream<res_T> res[CONFIG_T::n_chan]) {
     #pragma HLS INLINE
     res_T res_part;
 	for (int c = 0; c < CONFIG_T::n_chan; c++) {
         #pragma HLS UNROLL
 		res_part = 0;
-		res.write(res_part);
+		//std::cout <<res_part<<std::endl;
+		res[c].write(res_part);
     }
 }
 
@@ -40,7 +41,7 @@ void fill_data(hls::stream<data_T> &data, hls::stream<res_T> &res) {
 }
 
 template<class data_T, class res_T, typename CONFIG_T>
-void fill_data_me(hls::stream<data_T> &data, hls::stream<res_T> &res) {
+void fill_data_me(hls::stream<data_T> &data, hls::stream<res_T> res[CONFIG_T::n_chan]) {
     #pragma HLS INLINE
     res_T res_part;
 	data_T data_part;
@@ -48,7 +49,8 @@ void fill_data_me(hls::stream<data_T> &data, hls::stream<res_T> &res) {
         #pragma HLS UNROLL
 		 data_part = data.read();
         res_part = data_part;
-		res.write(res_part);
+		//std::cout <<res_part<<std::endl;
+		res[c].write(res_part);
     }
 
 }
@@ -105,7 +107,7 @@ void zeropad2d_cl(
 template<class data_T, class res_T, typename CONFIG_T>
 void zeropad2d_cl_me(
     hls::stream<data_T> &data,
-    hls::stream<res_T>  &res
+    hls::stream<res_T>  res[CONFIG_T::n_chan]
 ) {
 
     PadTop: for (int i = 0; i < CONFIG_T::pad_top; i++) {
@@ -131,6 +133,8 @@ void zeropad2d_cl_me(
             fill_zero_me<res_T, CONFIG_T>(res);
         }
     }
+	
+	std::cout <<"finish zeropad"<<std::endl;
 }
 
 
