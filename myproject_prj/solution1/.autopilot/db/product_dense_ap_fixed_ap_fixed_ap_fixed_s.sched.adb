@@ -77,14 +77,14 @@
 						<id>3</id>
 						<name>w_V_read</name>
 						<fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
-						<fileDirectory>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</fileDirectory>
+						<fileDirectory>/home/YL_HUANG/6_17/structure</fileDirectory>
 						<lineNumber>37</lineNumber>
 						<contextFuncName>product_dense&amp;lt;ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+								<first>/home/YL_HUANG/6_17/structure</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -126,14 +126,14 @@
 						<id>4</id>
 						<name>a_V_read</name>
 						<fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
-						<fileDirectory>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</fileDirectory>
+						<fileDirectory>/home/YL_HUANG/6_17/structure</fileDirectory>
 						<lineNumber>37</lineNumber>
 						<contextFuncName>product_dense&amp;lt;ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+								<first>/home/YL_HUANG/6_17/structure</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -175,14 +175,14 @@
 						<id>5</id>
 						<name>sext_ln1116</name>
 						<fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
-						<fileDirectory>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</fileDirectory>
+						<fileDirectory>/home/YL_HUANG/6_17/structure</fileDirectory>
 						<lineNumber>37</lineNumber>
 						<contextFuncName>product_dense&amp;lt;ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+								<first>/home/YL_HUANG/6_17/structure</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -223,14 +223,14 @@
 						<id>6</id>
 						<name>sext_ln1118</name>
 						<fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
-						<fileDirectory>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</fileDirectory>
+						<fileDirectory>/home/YL_HUANG/6_17/structure</fileDirectory>
 						<lineNumber>37</lineNumber>
 						<contextFuncName>product_dense&amp;lt;ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+								<first>/home/YL_HUANG/6_17/structure</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -271,14 +271,14 @@
 						<id>7</id>
 						<name>r_V</name>
 						<fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
-						<fileDirectory>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</fileDirectory>
+						<fileDirectory>/home/YL_HUANG/6_17/structure</fileDirectory>
 						<lineNumber>37</lineNumber>
 						<contextFuncName>product_dense&amp;lt;ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+								<first>/home/YL_HUANG/6_17/structure</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -320,14 +320,14 @@
 						<id>8</id>
 						<name>trunc_ln</name>
 						<fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
-						<fileDirectory>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</fileDirectory>
+						<fileDirectory>/home/YL_HUANG/6_17/structure</fileDirectory>
 						<lineNumber>37</lineNumber>
 						<contextFuncName>product_dense&amp;lt;ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+								<first>/home/YL_HUANG/6_17/structure</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -371,14 +371,14 @@
 						<id>9</id>
 						<name>_ln37</name>
 						<fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
-						<fileDirectory>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</fileDirectory>
+						<fileDirectory>/home/YL_HUANG/6_17/structure</fileDirectory>
 						<lineNumber>37</lineNumber>
 						<contextFuncName>product_dense&amp;lt;ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 14, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+								<first>/home/YL_HUANG/6_17/structure</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>

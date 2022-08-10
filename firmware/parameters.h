@@ -3,7 +3,6 @@
 
 #include "ap_int.h"
 #include "ap_fixed.h"
-#include "defines.h"
 
 #include "nnet_utils/nnet_helpers.h"
 //hls-fpga-machine-learning insert includes
@@ -32,9 +31,9 @@ struct config4 : nnet::padding2d_config {
 
 // conv2d
 struct config2_mult : nnet::dense_config {
-    static const unsigned n_in = 72;
-    static const unsigned n_out = 8;
-    static const unsigned reuse_factor = 72;
+    static const unsigned n_in = 2304;
+    static const unsigned n_out = 256;
+    static const unsigned reuse_factor = 1152;
     static const unsigned strategy = nnet::resource;
     typedef ap_fixed<16,14> accum_t;
     typedef model_default_t bias_t;
@@ -59,7 +58,7 @@ struct config2 : nnet::conv2d_config {
     static const unsigned stride_width = 1;
     static const unsigned out_height = OUT_HEIGHT_2;
     static const unsigned out_width = OUT_WIDTH_2;
-    static const unsigned reuse_factor = 72;
+    static const unsigned reuse_factor = 1152;
     static const unsigned n_zeros = 0;
     static const bool store_weights_in_bram = false;
     static const unsigned strategy = nnet::resource;

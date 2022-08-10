@@ -56,6 +56,7 @@ int main(int argc, char **argv)
   std::string pline;
   int e = 0;
 
+
   if (fin.is_open() && fpr.is_open()) {
     while ( std::getline(fin,iline) && std::getline (fpr,pline) ) {
       if (e % CHECKPOINT == 0) std::cout << "Processing input " << e << std::endl;
@@ -77,7 +78,7 @@ int main(int argc, char **argv)
 
       //hls-fpga-machine-learning insert data
       hls::stream<input_t> input_1("input_1");
-      nnet::copy_data_me<float, input_t, 0, N_INPUT_1_1*N_INPUT_2_1*N_INPUT_3_1>(in, input_1);
+      nnet::copy_data<float, input_t, 0, N_INPUT_1_1*N_INPUT_2_1*N_INPUT_3_1>(in, input_1);
       hls::stream<layer2_t> layer2_out("layer2_out");
 
       //hls-fpga-machine-learning insert top-level-function
@@ -93,12 +94,12 @@ int main(int argc, char **argv)
         std::cout << std::endl;
         std::cout << "Quantized predictions" << std::endl;
         //hls-fpga-machine-learning insert quantized
-        nnet::print_result_me<layer2_t, OUT_HEIGHT_2*OUT_WIDTH_2*N_FILT_2>(layer2_out, std::cout, true);
+        nnet::print_result<layer2_t, OUT_HEIGHT_2*OUT_WIDTH_2*N_FILT_2>(layer2_out, std::cout, true);
       }
       e++;
 
       //hls-fpga-machine-learning insert tb-output
-      nnet::print_result_me<layer2_t, OUT_HEIGHT_2*OUT_WIDTH_2*N_FILT_2>(layer2_out, fout);
+      nnet::print_result<layer2_t, OUT_HEIGHT_2*OUT_WIDTH_2*N_FILT_2>(layer2_out, fout);
 
     }
     fin.close();

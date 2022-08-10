@@ -52,7 +52,7 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "a_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "w_V", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_mul_mul_16s_16s_18_1_1_U9", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_mul_mul_16s_16s_18_1_1_U520", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

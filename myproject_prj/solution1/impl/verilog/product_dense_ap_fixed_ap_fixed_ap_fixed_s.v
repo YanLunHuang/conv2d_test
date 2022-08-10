@@ -28,7 +28,7 @@ myproject_mul_mul_16s_16s_18_1_1 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 18 ))
-myproject_mul_mul_16s_16s_18_1_1_U9(
+myproject_mul_mul_16s_16s_18_1_1_U520(
     .din0(w_V),
     .din1(a_V),
     .dout(r_V_fu_41_p2)

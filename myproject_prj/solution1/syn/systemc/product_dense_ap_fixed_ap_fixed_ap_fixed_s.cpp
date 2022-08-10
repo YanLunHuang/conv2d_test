@@ -19,10 +19,10 @@ const sc_lv<32> product_dense_ap_fixed_ap_fixed_ap_fixed_s::ap_const_lv32_11 = "
 const sc_logic product_dense_ap_fixed_ap_fixed_ap_fixed_s::ap_const_logic_0 = sc_dt::Log_0;
 
 product_dense_ap_fixed_ap_fixed_ap_fixed_s::product_dense_ap_fixed_ap_fixed_ap_fixed_s(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    myproject_mul_mul_16s_16s_18_1_1_U9 = new myproject_mul_mul_16s_16s_18_1_1<1,1,16,16,18>("myproject_mul_mul_16s_16s_18_1_1_U9");
-    myproject_mul_mul_16s_16s_18_1_1_U9->din0(w_V);
-    myproject_mul_mul_16s_16s_18_1_1_U9->din1(a_V);
-    myproject_mul_mul_16s_16s_18_1_1_U9->dout(r_V_fu_41_p2);
+    myproject_mul_mul_16s_16s_18_1_1_U520 = new myproject_mul_mul_16s_16s_18_1_1<1,1,16,16,18>("myproject_mul_mul_16s_16s_18_1_1_U520");
+    myproject_mul_mul_16s_16s_18_1_1_U520->din0(w_V);
+    myproject_mul_mul_16s_16s_18_1_1_U520->din1(a_V);
+    myproject_mul_mul_16s_16s_18_1_1_U520->dout(r_V_fu_41_p2);
 
     SC_METHOD(thread_ap_ready);
 
@@ -53,7 +53,7 @@ product_dense_ap_fixed_ap_fixed_ap_fixed_s::~product_dense_ap_fixed_ap_fixed_ap_
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete myproject_mul_mul_16s_16s_18_1_1_U9;
+    delete myproject_mul_mul_16s_16s_18_1_1_U520;
 }
 
 void product_dense_ap_fixed_ap_fixed_ap_fixed_s::thread_ap_ready() {
