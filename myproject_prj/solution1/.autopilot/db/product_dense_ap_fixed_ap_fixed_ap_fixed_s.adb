@@ -84,7 +84,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+                  <first>/home/YL_HUANG/7_15/8filter/structure</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -133,7 +133,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+                  <first>/home/YL_HUANG/7_15/8filter/structure</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -182,7 +182,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+                  <first>/home/YL_HUANG/7_15/8filter/structure</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -230,7 +230,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+                  <first>/home/YL_HUANG/7_15/8filter/structure</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -278,7 +278,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+                  <first>/home/YL_HUANG/7_15/8filter/structure</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -293,7 +293,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>r.V</originalName>
-              <rtlName>myproject_mul_mul_16s_16s_18_1_1_U9</rtlName>
+              <rtlName>myproject_mul_mul_16s_16s_18_1_1_U21</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>18</bitwidth>
@@ -327,7 +327,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+                  <first>/home/YL_HUANG/7_15/8filter/structure</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -378,7 +378,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+                  <first>/home/YL_HUANG/7_15/8filter/structure</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -678,7 +678,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="32" tracking_level="0" version="0">
-          <first>myproject_mul_mul_16s_16s_18_1_1_U9</first>
+          <first>myproject_mul_mul_16s_16s_18_1_1_U21</first>
           <second class_id="33" tracking_level="0" version="0">
             <count>1</count>
             <item_version>0</item_version>

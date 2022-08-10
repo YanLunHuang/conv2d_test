@@ -1,10 +1,10 @@
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp"
+# 1 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp"
-# 19 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp"
+# 1 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp"
+# 19 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp"
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/fstream" 1 3
 # 36 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/fstream" 3
        
@@ -28730,7 +28730,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 1082 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/fstream" 2 3
-# 20 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 2
+# 20 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 2
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iostream" 1 3
 # 36 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/iostream" 3
        
@@ -28762,7 +28762,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 21 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 2
+# 21 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 2
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/algorithm" 1 3
 # 58 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/algorithm" 3
        
@@ -35863,7 +35863,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 63 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/algorithm" 2 3
-# 22 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 2
+# 22 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 2
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/vector" 1 3
 # 58 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/vector" 3
        
@@ -39387,7 +39387,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 70 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/vector" 2 3
-# 23 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 2
+# 23 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 2
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/map" 1 3
 # 58 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/map" 3
        
@@ -44486,7 +44486,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 63 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/map" 2 3
-# 24 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 2
+# 24 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 2
 
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/stdlib.h" 1 3
 # 36 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/stdlib.h" 3
@@ -44540,7 +44540,7 @@ using std::system;
 
 using std::wcstombs;
 using std::wctomb;
-# 26 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 2
+# 26 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 2
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 1 3
 # 36 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 3
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 1 3
@@ -47115,10 +47115,10 @@ using std::scalbln;
 using std::scalbn;
 using std::tgamma;
 using std::trunc;
-# 27 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 2
+# 27 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 2
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.h" 1
-# 23 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.h"
+# 1 "/home/YL_HUANG/7_15/8filter/structure/firmware/myproject.h" 1
+# 23 "/home/YL_HUANG/7_15/8filter/structure/firmware/myproject.h"
 # 1 "/opt/Xilinx/Vivado/2019.2/include/ap_int.h" 1
 # 54 "/opt/Xilinx/Vivado/2019.2/include/ap_int.h"
 # 1 "/opt/Xilinx/Vivado/2019.2/include/ap_common.h" 1
@@ -73709,7 +73709,7 @@ inline bool operator!=(
 }
 # 399 "/opt/Xilinx/Vivado/2019.2/include/ap_fixed.h" 2
 # 368 "/opt/Xilinx/Vivado/2019.2/include/ap_int.h" 2
-# 24 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.h" 2
+# 24 "/home/YL_HUANG/7_15/8filter/structure/firmware/myproject.h" 2
 
 # 1 "/opt/Xilinx/Vivado/2019.2/include/hls_stream.h" 1
 # 79 "/opt/Xilinx/Vivado/2019.2/include/hls_stream.h"
@@ -77490,16 +77490,16 @@ class stream
 };
 
 }
-# 26 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.h" 2
+# 26 "/home/YL_HUANG/7_15/8filter/structure/firmware/myproject.h" 2
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/defines.h" 1
+# 1 "/home/YL_HUANG/7_15/8filter/structure/firmware/defines.h" 1
 
 
 
 # 1 "/opt/Xilinx/Vivado/2019.2/include/ap_int.h" 1
-# 5 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/defines.h" 2
+# 5 "/home/YL_HUANG/7_15/8filter/structure/firmware/defines.h" 2
 
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 1
+# 1 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_types.h" 1
 
 
 
@@ -77527,16 +77527,16 @@ extern void __assert (const char *__assertion, const char *__file, int __line)
 
 
 }
-# 5 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 2
+# 5 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_types.h" 2
 
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 1 3
 # 39 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
        
 # 40 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
-# 7 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 2
+# 7 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_types.h" 2
 
 
-# 8 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h"
+# 8 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_types.h"
 namespace nnet {
 
 
@@ -77560,17 +77560,17 @@ struct array {
             return *this;
 
         
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 3 4
+# 30 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_types.h" 3 4
        ((
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h"
+# 30 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_types.h"
        N == other.size && "Array sizes must match."
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 3 4
+# 30 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_types.h" 3 4
        ) ? static_cast<void> (0) : __assert_fail (
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h"
+# 30 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_types.h"
        "N == other.size && \"Array sizes must match.\""
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h" 3 4
-       , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h", 30, __PRETTY_FUNCTION__))
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_types.h"
+# 30 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_types.h" 3 4
+       , "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_types.h", 30, __PRETTY_FUNCTION__))
+# 30 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_types.h"
                                                            ;
 
         for (unsigned i = 0; i < N; i++) {
@@ -77582,34 +77582,34 @@ struct array {
 };
 
 }
-# 7 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/defines.h" 2
+# 7 "/home/YL_HUANG/7_15/8filter/structure/firmware/defines.h" 2
 
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 1 3
 # 39 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
        
 # 40 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdio" 3
-# 9 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/defines.h" 2
-# 22 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/defines.h"
+# 9 "/home/YL_HUANG/7_15/8filter/structure/firmware/defines.h" 2
+# 22 "/home/YL_HUANG/7_15/8filter/structure/firmware/defines.h"
 typedef ap_fixed<16,14> model_default_t;
-typedef ap_fixed<16,14> input_t;
-typedef ap_fixed<16,14> layer4_t;
-typedef ap_fixed<16,14> layer2_t;
-# 28 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.h" 2
+typedef nnet::array<ap_fixed<16,14>, 8*1> input_t;
+typedef nnet::array<ap_fixed<16,14>, 8*1> layer4_t;
+typedef nnet::array<ap_fixed<16,14>, 8*1> layer2_t;
+# 28 "/home/YL_HUANG/7_15/8filter/structure/firmware/myproject.h" 2
 
 
 void myproject(
     hls::stream<input_t> &input_1,
-    hls::stream<layer2_t> &layer2_out,
-    unsigned short &const_size_in_1,
-    unsigned short &const_size_out_1
+    hls::stream<layer2_t> &layer2_out
+
+
 );
-# 29 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 2
-# 1 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 1
-# 24 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 29 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 2
+# 1 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h" 1
+# 24 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h"
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/stdlib.h" 1 3
-# 25 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 2
+# 25 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h" 2
 # 1 "/opt/Xilinx/Vivado/2019.2/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 1 3
-# 26 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 2
+# 26 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h" 2
 
 
 
@@ -77630,8 +77630,6 @@ void load_weights_from_txt(T *w, const char* fname) {
 
     std::string full_path = std::string("weights") + "/" + std::string(fname);
     std::ifstream infile(full_path.c_str(), std::ios::binary);
-
-#pragma HLS bind_storage variable=w type=RAM_S2P impl=bram
 
     if (infile.fail()) {
         std::cerr << "ERROR: file " << std::string(fname) << " does not exist" << std::endl;
@@ -77821,17 +77819,17 @@ void save_layer_output(data_T *data, const char *layer_name, size_t layer_size) 
         std::fstream out;
         out.open(filename.str(), std::ios::app);
         
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
+# 234 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h" 3 4
        ((
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 234 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h"
        out.is_open()
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
+# 234 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h" 3 4
        ) ? static_cast<void> (0) : __assert_fail (
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 234 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h"
        "out.is_open()"
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
-       , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h", 236, __PRETTY_FUNCTION__))
-# 236 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 234 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h" 3 4
+       , "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h", 234, __PRETTY_FUNCTION__))
+# 234 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h"
                             ;
         for(int i = 0; i < layer_size; i++) {
             out << float(data[i]) << " ";
@@ -77863,17 +77861,17 @@ void save_layer_output(hls::stream<data_T> &data, const char *layer_name, size_t
         std::fstream out;
         out.open(filename.str(), std::ios::app);
         
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
+# 264 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h" 3 4
        ((
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 264 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h"
        out.is_open()
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
+# 264 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h" 3 4
        ) ? static_cast<void> (0) : __assert_fail (
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 264 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h"
        "out.is_open()"
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h" 3 4
-       , "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h", 266, __PRETTY_FUNCTION__))
-# 266 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/nnet_utils/nnet_helpers.h"
+# 264 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h" 3 4
+       , "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h", 264, __PRETTY_FUNCTION__))
+# 264 "/home/YL_HUANG/7_15/8filter/structure/firmware/nnet_utils/nnet_helpers.h"
                             ;
         for (size_t i = 0; i < layer_size / data_T::size; i++) {
             data_T ctype = data.read();
@@ -78067,7 +78065,7 @@ constexpr int pow2(int x){
 }
 
 }
-# 30 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 2
+# 30 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 2
 
 
 
@@ -78076,9 +78074,9 @@ constexpr int pow2(int x){
 namespace nnet {
     bool trace_enabled = true;
     std::map<std::string, void *> *trace_outputs = 
-# 37 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 3 4
+# 37 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 3 4
                                                   __null
-# 37 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp"
+# 37 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp"
                                                       ;
     size_t trace_type_size = sizeof(double);
 }
@@ -78101,6 +78099,7 @@ int main(int argc, char **argv)
   std::string pline;
   int e = 0;
 
+
   if (fin.is_open() && fpr.is_open()) {
     while ( std::getline(fin,iline) && std::getline (fpr,pline) ) {
       if (e % 5000 == 0) std::cout << "Processing input " << e << std::endl;
@@ -78109,41 +78108,42 @@ int main(int argc, char **argv)
       std::vector<float> in;
       current=strtok(cstr," ");
       while(current!=
-# 66 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 3 4
+# 67 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 3 4
                     __null
-# 66 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp"
+# 67 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp"
                         ) {
         in.push_back(atof(current));
         current=strtok(
-# 68 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 3 4
+# 69 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 3 4
                       __null
-# 68 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp"
+# 69 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp"
                           ," ");
       }
       cstr=const_cast<char*>(pline.c_str());
       std::vector<float> pr;
       current=strtok(cstr," ");
       while(current!=
-# 73 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 3 4
+# 74 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 3 4
                     __null
-# 73 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp"
+# 74 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp"
                         ) {
         pr.push_back(atof(current));
         current=strtok(
-# 75 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp" 3 4
+# 76 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp" 3 4
                       __null
-# 75 "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp"
+# 76 "/home/YL_HUANG/7_15/8filter/structure/myproject_test.cpp"
                           ," ");
       }
 
 
       hls::stream<input_t> input_1("input_1");
-      nnet::copy_data_me<float, input_t, 0, 3*3*8>(in, input_1);
+      nnet::copy_data<float, input_t, 0, 3*3*8>(in, input_1);
       hls::stream<layer2_t> layer2_out("layer2_out");
 
 
-      unsigned short size_in1,size_out1;
-      myproject(input_1,layer2_out,size_in1,size_out1);
+
+
+      myproject(input_1,layer2_out);
 
       if (e % 5000 == 0) {
         std::cout << "Predictions" << std::endl;
@@ -78154,12 +78154,12 @@ int main(int argc, char **argv)
         std::cout << std::endl;
         std::cout << "Quantized predictions" << std::endl;
 
-        nnet::print_result_me<layer2_t, 3*3*8>(layer2_out, std::cout, true);
+        nnet::print_result<layer2_t, 3*3*8>(layer2_out, std::cout, true);
       }
       e++;
 
 
-      nnet::print_result_me<layer2_t, 3*3*8>(layer2_out, fout);
+      nnet::print_result<layer2_t, 3*3*8>(layer2_out, fout);
 
     }
     fin.close();

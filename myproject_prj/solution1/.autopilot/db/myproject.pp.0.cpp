@@ -30460,17 +30460,17 @@ struct array {
 # 9 "firmware/defines.h" 2
 # 22 "firmware/defines.h"
 typedef ap_fixed<16,14> model_default_t;
-typedef ap_fixed<16,14> input_t;
-typedef ap_fixed<16,14> layer4_t;
-typedef ap_fixed<16,14> layer2_t;
+typedef nnet::array<ap_fixed<16,14>, 8*1> input_t;
+typedef nnet::array<ap_fixed<16,14>, 8*1> layer4_t;
+typedef nnet::array<ap_fixed<16,14>, 8*1> layer2_t;
 # 28 "firmware/myproject.h" 2
 
 
 void myproject(
     hls::stream<input_t> &input_1,
-    hls::stream<layer2_t> &layer2_out,
-    unsigned short &const_size_in_1,
-    unsigned short &const_size_out_1
+    hls::stream<layer2_t> &layer2_out
+
+
 );
 # 22 "firmware/myproject.cpp" 2
 # 1 "firmware/parameters.h" 1
@@ -57866,7 +57866,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 namespace nnet {
-# 282 "firmware/nnet_utils/nnet_helpers.h"
+# 280 "firmware/nnet_utils/nnet_helpers.h"
 template<class src_T, class dst_T, size_t OFFSET, size_t SIZE>
 void copy_data(std::vector<src_T> src, dst_T dst[SIZE]) {
     typename std::vector<src_T>::const_iterator in_begin = src.cbegin() + OFFSET;
@@ -60198,6 +60198,25 @@ void conv_2d_buffer_cl(
 }
 
 template <class data_T, class res_T, typename CONFIG_T>
+void conv_2d_cl(
+    hls::stream<data_T> &data,
+    hls::stream<res_T> &res,
+    typename CONFIG_T::weight_t weights[CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::n_filt],
+    typename CONFIG_T::bias_t biases[CONFIG_T::n_filt])
+{
+#pragma HLS inline region
+ switch(CONFIG_T::implementation){
+        case conv_implementation::linebuffer:
+            conv_2d_large_cl_nopad_pad<data_T, res_T, CONFIG_T>(data, res, weights, biases);
+            break;
+        case conv_implementation::encoded:
+            conv_2d_large_cl_nopad_pad<data_T, res_T, CONFIG_T>(data, res, weights, biases);
+            break;
+    }
+}
+
+
+template <class data_T, class res_T, typename CONFIG_T>
 void conv_2d_cl_me(
     hls::stream<data_T> &data,
     hls::stream<res_T> &res,
@@ -60581,28 +60600,21 @@ const ap_uint<config2::filt_height * config2::filt_width> config2::pixels[] = {1
 # 23 "firmware/myproject.cpp" 2
 
 
-
-
 void myproject(
     hls::stream<input_t> &input_1,
-    hls::stream<layer2_t> &layer2_out,
-    unsigned short &const_size_in_1,
-    unsigned short &const_size_out_1
+    hls::stream<layer2_t> &layer2_out
+
+
 ) {
 
 
 #pragma HLS INTERFACE axis port=&input_1,&layer2_out
-
-
- const_size_in_1 = 3*3*8;
-    const_size_out_1 = 3*3*8;
-# 56 "firmware/myproject.cpp"
 #pragma HLS DATAFLOW
-
+# 55 "firmware/myproject.cpp"
  hls::stream<layer4_t> layer4_out("layer4_out");
 #pragma HLS STREAM variable=&layer4_out depth=25
- nnet::zeropad2d_cl_me<input_t, layer4_t, config4>(input_1, layer4_out);
+ nnet::zeropad2d_cl<input_t, layer4_t, config4>(input_1, layer4_out);
 
-    nnet::conv_2d_cl_me<layer4_t, layer2_t, config2>(layer4_out, layer2_out, w2, b2);
+    nnet::conv_2d_cl<layer4_t, layer2_t, config2>(layer4_out, layer2_out, w2, b2);
 
 }

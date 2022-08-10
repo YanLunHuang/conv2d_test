@@ -30460,17 +30460,17 @@ _ssdm_Unroll(0,0,0, "");
 # 9 "firmware/defines.h" 2
 # 22 "firmware/defines.h"
 typedef ap_fixed<16,14> model_default_t;
-typedef ap_fixed<16,14> input_t;
-typedef ap_fixed<16,14> layer4_t;
-typedef ap_fixed<16,14> layer2_t;
+typedef nnet::array<ap_fixed<16,14>, 8*1> input_t;
+typedef nnet::array<ap_fixed<16,14>, 8*1> layer4_t;
+typedef nnet::array<ap_fixed<16,14>, 8*1> layer2_t;
 # 28 "firmware/myproject.h" 2
 
 
 void myproject(
     hls::stream<input_t> &input_1,
-    hls::stream<layer2_t> &layer2_out,
-    unsigned short &const_size_in_1,
-    unsigned short &const_size_out_1
+    hls::stream<layer2_t> &layer2_out
+
+
 );
 # 22 "firmware/myproject.cpp" 2
 # 1 "firmware/parameters.h" 1
@@ -57866,7 +57866,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 namespace nnet {
-# 282 "firmware/nnet_utils/nnet_helpers.h"
+# 280 "firmware/nnet_utils/nnet_helpers.h"
 template<class src_T, class dst_T, size_t OFFSET, size_t SIZE>
 void copy_data(std::vector<src_T> src, dst_T dst[SIZE]) {
     typename std::vector<src_T>::const_iterator in_begin = src.cbegin() + OFFSET;
@@ -59969,7 +59969,7 @@ void conv_2d_large_cl_nopad_pad_me(
 _ssdm_SpecArrayReshape( &layer_in_row, 2,  "COMPLETE",  0, "");
 
  data_T tmpdata[CONFIG_T::n_chan];
-_ssdm_SpecArrayReshape( tmpdata, 1,  "COMPLETE",  0, "");
+_ssdm_SpecArrayReshape( &tmpdata, 1,  "COMPLETE",  0, "");
 
  static data_T layer_in[CONFIG_T::filt_height*CONFIG_T::filt_width*CONFIG_T::n_chan];
 _ssdm_SpecArrayReshape( &layer_in, 1,  "COMPLETE",  0, "");
@@ -59978,7 +59978,7 @@ _ssdm_SpecArrayReshape( &layer_in, 1,  "COMPLETE",  0, "");
 
 
  res_T layer_out[CONFIG_T::n_filt];
-_ssdm_SpecArrayReshape( layer_out, 0,  "COMPLETE",  0, "");
+_ssdm_SpecArrayReshape( &layer_out, 0,  "COMPLETE",  0, "");
 
  res_T res_pack;
 _ssdm_DataPack( &res_pack, 0, 0, "", "", "");
@@ -60075,7 +60075,7 @@ void conv_2d_large_cl_nopad_pad(
 _ssdm_SpecArrayReshape( &layer_in_row, 2,  "COMPLETE",  0, "");
 
  typename data_T::value_type tmpdata[CONFIG_T::n_chan];
-_ssdm_SpecArrayReshape( &tmpdata, 1,  "COMPLETE",  0, "");
+_ssdm_SpecArrayReshape( tmpdata, 1,  "COMPLETE",  0, "");
 
  static typename data_T::value_type layer_in[CONFIG_T::filt_height*CONFIG_T::filt_width*CONFIG_T::n_chan];
 _ssdm_SpecArrayReshape( &layer_in, 1,  "COMPLETE",  0, "");
@@ -60084,7 +60084,7 @@ _ssdm_SpecArrayReshape( &layer_in, 1,  "COMPLETE",  0, "");
 
 
  typename res_T::value_type layer_out[CONFIG_T::n_filt];
-_ssdm_SpecArrayReshape( &layer_out, 0,  "COMPLETE",  0, "");
+_ssdm_SpecArrayReshape( layer_out, 0,  "COMPLETE",  0, "");
 
  res_T res_pack;
 _ssdm_DataPack( &res_pack, 0, 0, "", "", "");
@@ -60196,6 +60196,25 @@ _ssdm_op_SpecPipeline(CONFIG_T::reuse_factor, 1, 1, 0, "");
         }
     }
 }
+
+template <class data_T, class res_T, typename CONFIG_T>
+void conv_2d_cl(
+    hls::stream<data_T> &data,
+    hls::stream<res_T> &res,
+    typename CONFIG_T::weight_t weights[CONFIG_T::filt_height * CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::n_filt],
+    typename CONFIG_T::bias_t biases[CONFIG_T::n_filt])
+{
+_ssdm_InlineRegion(0, "");
+ switch(CONFIG_T::implementation){
+        case conv_implementation::linebuffer:
+            conv_2d_large_cl_nopad_pad<data_T, res_T, CONFIG_T>(data, res, weights, biases);
+            break;
+        case conv_implementation::encoded:
+            conv_2d_large_cl_nopad_pad<data_T, res_T, CONFIG_T>(data, res, weights, biases);
+            break;
+    }
+}
+
 
 template <class data_T, class res_T, typename CONFIG_T>
 void conv_2d_cl_me(
@@ -60581,28 +60600,21 @@ const ap_uint<config2::filt_height * config2::filt_width> config2::pixels[] = {1
 # 23 "firmware/myproject.cpp" 2
 
 
-
-
 void myproject(
     hls::stream<input_t> &input_1,
-    hls::stream<layer2_t> &layer2_out,
-    unsigned short &const_size_in_1,
-    unsigned short &const_size_out_1
+    hls::stream<layer2_t> &layer2_out
+
+
 ) {
 
 
 _ssdm_op_SpecInterface(&input_1, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");_ssdm_op_SpecInterface(&layer2_out, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-
-
- const_size_in_1 = 3*3*8;
-    const_size_out_1 = 3*3*8;
-# 56 "firmware/myproject.cpp"
 _ssdm_op_SpecDataflowPipeline(-1, 0, "");
-
+# 55 "firmware/myproject.cpp"
  hls::stream<layer4_t> layer4_out("layer4_out");
 _ssdm_SpecStream( &layer4_out, 0, 25, "");
- nnet::zeropad2d_cl_me<input_t, layer4_t, config4>(input_1, layer4_out);
+ nnet::zeropad2d_cl<input_t, layer4_t, config4>(input_1, layer4_out);
 
-    nnet::conv_2d_cl_me<layer4_t, layer2_t, config2>(layer4_out, layer2_out, w2, b2);
+    nnet::conv_2d_cl<layer4_t, layer2_t, config2>(layer4_out, layer2_out, w2, b2);
 
 }

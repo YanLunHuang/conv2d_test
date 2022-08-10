@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 6
+set ID 18
 set hasByteEnable 0
 set MemName cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layebkb
 set CoreName ShiftReg
@@ -96,7 +96,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 7 \
+    id 19 \
     name data_V_read \
     type other \
     dir I \
@@ -111,7 +111,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 8 \
+    id 20 \
     name output_V_read \
     type other \
     dir I \

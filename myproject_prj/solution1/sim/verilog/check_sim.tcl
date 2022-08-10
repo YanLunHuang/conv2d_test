@@ -80,11 +80,30 @@ proc check_tvin_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "c.myproject.autotvin_input_1_V_V.dat"
-         "c.myproject.autotvin_layer2_out_V_V.dat"
-         "c.myproject.autotvout_layer2_out_V_V.dat"
-         "c.myproject.autotvout_const_size_in_1.dat"
-         "c.myproject.autotvout_const_size_out_1.dat"
+         "c.myproject.autotvin_input_1_V_data_0_V.dat"
+         "c.myproject.autotvin_input_1_V_data_1_V.dat"
+         "c.myproject.autotvin_input_1_V_data_2_V.dat"
+         "c.myproject.autotvin_input_1_V_data_3_V.dat"
+         "c.myproject.autotvin_input_1_V_data_4_V.dat"
+         "c.myproject.autotvin_input_1_V_data_5_V.dat"
+         "c.myproject.autotvin_input_1_V_data_6_V.dat"
+         "c.myproject.autotvin_input_1_V_data_7_V.dat"
+         "c.myproject.autotvin_layer2_out_V_data_0_V.dat"
+         "c.myproject.autotvin_layer2_out_V_data_1_V.dat"
+         "c.myproject.autotvin_layer2_out_V_data_2_V.dat"
+         "c.myproject.autotvin_layer2_out_V_data_3_V.dat"
+         "c.myproject.autotvin_layer2_out_V_data_4_V.dat"
+         "c.myproject.autotvin_layer2_out_V_data_5_V.dat"
+         "c.myproject.autotvin_layer2_out_V_data_6_V.dat"
+         "c.myproject.autotvin_layer2_out_V_data_7_V.dat"
+         "c.myproject.autotvout_layer2_out_V_data_0_V.dat"
+         "c.myproject.autotvout_layer2_out_V_data_1_V.dat"
+         "c.myproject.autotvout_layer2_out_V_data_2_V.dat"
+         "c.myproject.autotvout_layer2_out_V_data_3_V.dat"
+         "c.myproject.autotvout_layer2_out_V_data_4_V.dat"
+         "c.myproject.autotvout_layer2_out_V_data_5_V.dat"
+         "c.myproject.autotvout_layer2_out_V_data_6_V.dat"
+         "c.myproject.autotvout_layer2_out_V_data_7_V.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
@@ -109,9 +128,14 @@ proc check_tvout_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "rtl.myproject.autotvout_layer2_out_V_V.dat"
-         "rtl.myproject.autotvout_const_size_in_1.dat"
-         "rtl.myproject.autotvout_const_size_out_1.dat"
+         "rtl.myproject.autotvout_layer2_out_V_data_0_V.dat"
+         "rtl.myproject.autotvout_layer2_out_V_data_1_V.dat"
+         "rtl.myproject.autotvout_layer2_out_V_data_2_V.dat"
+         "rtl.myproject.autotvout_layer2_out_V_data_3_V.dat"
+         "rtl.myproject.autotvout_layer2_out_V_data_4_V.dat"
+         "rtl.myproject.autotvout_layer2_out_V_data_5_V.dat"
+         "rtl.myproject.autotvout_layer2_out_V_data_6_V.dat"
+         "rtl.myproject.autotvout_layer2_out_V_data_7_V.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

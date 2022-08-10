@@ -135,19 +135,16 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
     endfunction
 
     // get the proc path based on dl vector
-    function [592:0] proc_path(input [PROC_NUM - 1:0] dl_vec);
+    function [536:0] proc_path(input [PROC_NUM - 1:0] dl_vec);
         integer index;
         begin
             index = proc_index(dl_vec);
             case (index)
                 0 : begin
-                    proc_path = "myproject.Block_proc_U0";
+                    proc_path = "myproject.zeropad2d_cl_array_array_ap_fixed_8u_config4_U0";
                 end
                 1 : begin
-                    proc_path = "myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0";
-                end
-                2 : begin
-                    proc_path = "myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0";
+                    proc_path = "myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0";
                 end
                 default : begin
                     proc_path = "unknown";
@@ -167,7 +164,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
     endtask
 
     // print the start of a cycle
-    task print_cycle_start(input reg [592:0] proc_path, input integer cycle_id);
+    task print_cycle_start(input reg [536:0] proc_path, input integer cycle_id);
         begin
             $display("/////////////////////////");
             $display("// Dependence cycle %0d:", cycle_id);
@@ -190,7 +187,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
     endtask
 
     // print one proc component in the cycle
-    task print_cycle_proc_comp(input reg [592:0] proc_path, input integer cycle_comp_id);
+    task print_cycle_proc_comp(input reg [536:0] proc_path, input integer cycle_comp_id);
         begin
             $display("// (%0d): Process: %0s", cycle_comp_id, proc_path);
             $fdisplay(fp, "Dependence_Process_ID %0d", cycle_comp_id);
@@ -200,7 +197,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
 
     // print one channel component in the cycle
     task print_cycle_chan_comp(input [PROC_NUM - 1:0] dl_vec1, input [PROC_NUM - 1:0] dl_vec2);
-        reg [288:0] chan_path;
+        reg [344:0] chan_path;
         integer index1;
         integer index2;
         begin
@@ -210,11 +207,155 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                 0 : begin
                     case(index2)
                     1: begin
-                        if (((AESL_inst_myproject.Block_proc_U0_ap_ready_count[0]) & AESL_inst_myproject.Block_proc_U0.ap_idle & ~(AESL_inst_myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0_ap_ready_count[0]))) begin
+                        if (~AESL_inst_myproject.zeropad2d_cl_array_array_ap_fixed_8u_config4_U0.res_V_data_0_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_0_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_0_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_0_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.zeropad2d_cl_array_array_ap_fixed_8u_config4_U0.res_V_data_1_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_1_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_1_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_1_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.zeropad2d_cl_array_array_ap_fixed_8u_config4_U0.res_V_data_2_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_2_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_2_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_2_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.zeropad2d_cl_array_array_ap_fixed_8u_config4_U0.res_V_data_3_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_3_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_3_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_3_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.zeropad2d_cl_array_array_ap_fixed_8u_config4_U0.res_V_data_4_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_4_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_4_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_4_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.zeropad2d_cl_array_array_ap_fixed_8u_config4_U0.res_V_data_5_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_5_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_5_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_5_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.zeropad2d_cl_array_array_ap_fixed_8u_config4_U0.res_V_data_6_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_6_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_6_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_6_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.zeropad2d_cl_array_array_ap_fixed_8u_config4_U0.res_V_data_7_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_7_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_7_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_7_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if ((~AESL_inst_myproject.start_for_conv_2d_cl_array_array_ap_fixed_8u_config2_U0_U.if_full_n & AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.ap_done)) begin
                             chan_path = "";
-                            if (((AESL_inst_myproject.Block_proc_U0_ap_ready_count[0]) & AESL_inst_myproject.Block_proc_U0.ap_idle & ~(AESL_inst_myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0_ap_ready_count[0]))) begin
-                                $display("//      Deadlocked by sync logic between input processes");
-                                $display("//      Please increase channel depth");
+                            if ((~AESL_inst_myproject.start_for_conv_2d_cl_array_array_ap_fixed_8u_config2_U0_U.if_full_n & AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.ap_done)) begin
+                                $display("//      Deadlock detected: can be a false alarm due to leftover data,");
+                                $display("//      please try cosim_design -disable_deadlock_detection");
                             end
                         end
                     end
@@ -222,55 +363,15 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                 end
                 1 : begin
                     case(index2)
-                    2: begin
-                        if (~AESL_inst_myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0.res_V_V_blk_n) begin
-                            chan_path = "myproject.layer4_out_V_V_U";
-                            if (~AESL_inst_myproject.layer4_out_V_V_U.if_empty_n) begin
-                                $display("//      Channel: %0s, EMPTY", chan_path);
-                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
-                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
-                            end
-                            else if (~AESL_inst_myproject.layer4_out_V_V_U.if_full_n) begin
-                                $display("//      Channel: %0s, FULL", chan_path);
-                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
-                                $fdisplay(fp, "Dependence_Channel_status FULL");
-                            end
-                            else begin
-                                $display("//      Channel: %0s", chan_path);
-                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
-                                $fdisplay(fp, "Dependence_Channel_status NULL");
-                            end
-                        end
-                        if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U.if_full_n & AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_done)) begin
-                            chan_path = "";
-                            if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U.if_full_n & AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_done)) begin
-                                $display("//      Deadlock detected: can be a false alarm due to leftover data,");
-                                $display("//      please try cosim_design -disable_deadlock_detection");
-                            end
-                        end
-                    end
                     0: begin
-                        if (((AESL_inst_myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0_ap_ready_count[0]) & AESL_inst_myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0.ap_idle & ~(AESL_inst_myproject.Block_proc_U0_ap_ready_count[0]))) begin
-                            chan_path = "";
-                            if (((AESL_inst_myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0_ap_ready_count[0]) & AESL_inst_myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0.ap_idle & ~(AESL_inst_myproject.Block_proc_U0_ap_ready_count[0]))) begin
-                                $display("//      Deadlocked by sync logic between input processes");
-                                $display("//      Please increase channel depth");
-                            end
-                        end
-                    end
-                    endcase
-                end
-                2 : begin
-                    case(index2)
-                    1: begin
-                        if (~AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.data_V_V_blk_n) begin
-                            chan_path = "myproject.layer4_out_V_V_U";
-                            if (~AESL_inst_myproject.layer4_out_V_V_U.if_empty_n) begin
+                        if (~AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.data_V_data_0_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_0_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_0_V_U.if_empty_n) begin
                                 $display("//      Channel: %0s, EMPTY", chan_path);
                                 $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~AESL_inst_myproject.layer4_out_V_V_U.if_full_n) begin
+                            else if (~AESL_inst_myproject.layer4_out_V_data_0_V_U.if_full_n) begin
                                 $display("//      Channel: %0s, FULL", chan_path);
                                 $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
@@ -281,9 +382,135 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                                 $fdisplay(fp, "Dependence_Channel_status NULL");
                             end
                         end
-                        if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U.if_empty_n & (AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_ready | AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_idle))) begin
+                        if (~AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.data_V_data_1_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_1_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_1_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_1_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.data_V_data_2_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_2_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_2_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_2_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.data_V_data_3_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_3_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_3_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_3_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.data_V_data_4_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_4_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_4_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_4_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.data_V_data_5_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_5_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_5_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_5_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.data_V_data_6_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_6_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_6_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_6_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if (~AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.data_V_data_7_V_blk_n) begin
+                            chan_path = "myproject.layer4_out_V_data_7_V_U";
+                            if (~AESL_inst_myproject.layer4_out_V_data_7_V_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~AESL_inst_myproject.layer4_out_V_data_7_V_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_path %0s", chan_path);
+                                $fdisplay(fp, "Dependence_Channel_status NULL");
+                            end
+                        end
+                        if ((~AESL_inst_myproject.start_for_conv_2d_cl_array_array_ap_fixed_8u_config2_U0_U.if_empty_n & (AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.ap_ready | AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.ap_idle))) begin
                             chan_path = "";
-                            if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U.if_empty_n & (AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_ready | AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_idle))) begin
+                            if ((~AESL_inst_myproject.start_for_conv_2d_cl_array_array_ap_fixed_8u_config2_U0_U.if_empty_n & (AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.ap_ready | AESL_inst_myproject.conv_2d_cl_array_array_ap_fixed_8u_config2_U0.ap_idle))) begin
                                 $display("//      Deadlock detected: can be a false alarm due to leftover data,");
                                 $display("//      please try cosim_design -disable_deadlock_detection");
                             end
