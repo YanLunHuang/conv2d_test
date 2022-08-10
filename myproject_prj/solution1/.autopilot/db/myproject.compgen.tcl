@@ -71,8 +71,8 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 # FIFO definition:
 set ID 18
-set FifoName start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU
-set InstName start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U
+set FifoName start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb
+set InstName start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U
 set CoreName ap_simcore_fifo
 set NumOfStage 2
 set RegisteredInput 0

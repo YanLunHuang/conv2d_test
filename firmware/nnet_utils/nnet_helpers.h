@@ -44,8 +44,6 @@ void load_weights_from_txt(T *w, const char* fname) {
     std::string full_path = std::string(WEIGHTS_DIR) + "/" + std::string(fname);
     std::ifstream infile(full_path.c_str(), std::ios::binary);
 
-	#pragma HLS bind_storage variable=w type=RAM_S2P impl=bram
-
     if (infile.fail()) {
         std::cerr << "ERROR: file " << std::string(fname) << " does not exist" << std::endl;
         exit(1);

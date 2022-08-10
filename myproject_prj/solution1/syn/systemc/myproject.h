@@ -15,7 +15,7 @@
 #include "zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.h"
 #include "conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.h"
 #include "fifo_w16_d25_A.h"
-#include "start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU.h"
+#include "start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb.h"
 
 namespace ap_rtl {
 
@@ -54,7 +54,7 @@ struct myproject : public sc_module {
     zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s* zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0;
     conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s* conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0;
     fifo_w16_d25_A* layer4_out_V_V_U;
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU* start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U;
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb* start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U;
     sc_signal< sc_logic > ap_rst_n_inv;
     sc_signal< sc_logic > Block_proc_U0_ap_start;
     sc_signal< sc_logic > Block_proc_U0_ap_done;

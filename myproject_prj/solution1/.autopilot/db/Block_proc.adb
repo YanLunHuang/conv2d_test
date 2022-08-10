@@ -84,7 +84,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+                  <first>/home/YL_HUANG/6_17/single_stream</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -134,7 +134,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/YL_HUANG/7_8/8_filter/read_from_weight_h</first>
+                  <first>/home/YL_HUANG/6_17/single_stream</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -228,7 +228,7 @@
             <bitwidth>16</bitwidth>
           </Value>
           <const_type>0</const_type>
-          <content>72</content>
+          <content>2304</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">

@@ -28,7 +28,7 @@ module AESL_axi_s_layer2_out_V_V (
     reg layer2_out_V_V_TDATA_read_en;
     wire [16 - 1:0] layer2_out_V_V_TDATA_read_data;
     
-    fifo #(72, 16) fifo_layer2_out_V_V_TDATA (
+    fifo #(2304, 16) fifo_layer2_out_V_V_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(layer2_out_V_V_TDATA_write_en),

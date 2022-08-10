@@ -32,9 +32,9 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 2293;
-parameter LENGTH_input_1_V_V = 72;
-parameter LENGTH_layer2_out_V_V = 72;
+parameter LATENCY_ESTIMATION = 42189;
+parameter LENGTH_input_1_V_V = 2304;
+parameter LENGTH_layer2_out_V_V = 2304;
 parameter LENGTH_const_size_in_1 = 1;
 parameter LENGTH_const_size_out_1 = 1;
 

@@ -33,7 +33,7 @@ end;
 architecture behav of myproject is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "myproject,hls_ip_2019_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xczu9eg-ffvb1156-2-e,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.770000,HLS_SYN_LAT=1268,HLS_SYN_TPT=1252,HLS_SYN_MEM=4,HLS_SYN_DSP=8,HLS_SYN_FF=4187,HLS_SYN_LUT=8722,HLS_VERSION=2019_2}";
+    "myproject,hls_ip_2019_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xczu9eg-ffvb1156-2-e,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.893000,HLS_SYN_LAT=24564,HLS_SYN_TPT=24052,HLS_SYN_MEM=684,HLS_SYN_DSP=512,HLS_SYN_FF=124980,HLS_SYN_LUT=58704,HLS_VERSION=2019_2}";
     constant ap_const_lv16_0 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000000";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
@@ -160,7 +160,7 @@ architecture behav of myproject is
     end component;
 
 
-    component start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU IS
+    component start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -239,7 +239,7 @@ begin
         if_empty_n => layer4_out_V_V_empty_n,
         if_read => conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_data_V_V_read);
 
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U : component start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U : component start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,

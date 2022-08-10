@@ -241,9 +241,9 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                                 $fdisplay(fp, "Dependence_Channel_status NULL");
                             end
                         end
-                        if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U.if_full_n & AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_done)) begin
+                        if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U.if_full_n & AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_done)) begin
                             chan_path = "";
-                            if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U.if_full_n & AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_done)) begin
+                            if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U.if_full_n & AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_done)) begin
                                 $display("//      Deadlock detected: can be a false alarm due to leftover data,");
                                 $display("//      please try cosim_design -disable_deadlock_detection");
                             end
@@ -281,9 +281,9 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                                 $fdisplay(fp, "Dependence_Channel_status NULL");
                             end
                         end
-                        if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U.if_empty_n & (AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_ready | AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_idle))) begin
+                        if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U.if_empty_n & (AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_ready | AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_idle))) begin
                             chan_path = "";
-                            if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U.if_empty_n & (AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_ready | AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_idle))) begin
+                            if ((~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U.if_empty_n & (AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_ready | AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_idle))) begin
                                 $display("//      Deadlock detected: can be a false alarm due to leftover data,");
                                 $display("//      please try cosim_design -disable_deadlock_detection");
                             end

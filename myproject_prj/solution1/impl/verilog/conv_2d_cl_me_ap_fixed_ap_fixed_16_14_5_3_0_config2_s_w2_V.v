@@ -6,9 +6,9 @@
 module conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_w2_V_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 115;
-parameter AWIDTH = 7;
-parameter MEM_SIZE = 72;
+parameter DWIDTH = 8179;
+parameter AWIDTH = 11;
+parameter MEM_SIZE = 1152;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -43,9 +43,9 @@ module conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_w2_V(
     ce0,
     q0);
 
-parameter DataWidth = 32'd115;
-parameter AddressRange = 32'd72;
-parameter AddressWidth = 32'd7;
+parameter DataWidth = 32'd8179;
+parameter AddressRange = 32'd1152;
+parameter AddressWidth = 32'd11;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

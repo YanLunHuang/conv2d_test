@@ -74,17 +74,17 @@ myproject::myproject(sc_module_name name) : sc_module(name), mVcdFile(0) {
     layer4_out_V_V_U->if_dout(layer4_out_V_V_dout);
     layer4_out_V_V_U->if_empty_n(layer4_out_V_V_empty_n);
     layer4_out_V_V_U->if_read(conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_data_V_V_read);
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U = new start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU("start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U");
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U->clk(ap_clk);
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U->reset(ap_rst_n_inv);
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U->if_read_ce(ap_var_for_const0);
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U->if_write_ce(ap_var_for_const0);
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U->if_din(start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_din);
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U->if_full_n(start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_full_n);
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U->if_write(zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0_start_write);
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U->if_dout(start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_dout);
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U->if_empty_n(start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_empty_n);
-    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U->if_read(conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_ap_ready);
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U = new start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb("start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U");
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U->clk(ap_clk);
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U->reset(ap_rst_n_inv);
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U->if_read_ce(ap_var_for_const0);
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U->if_write_ce(ap_var_for_const0);
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U->if_din(start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_din);
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U->if_full_n(start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_full_n);
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U->if_write(zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0_start_write);
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U->if_dout(start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_dout);
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U->if_empty_n(start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_empty_n);
+    start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U->if_read(conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0_ap_ready);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -275,7 +275,7 @@ myproject::~myproject() {
     delete zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0;
     delete conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0;
     delete layer4_out_V_V_U;
-    delete start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U;
+    delete start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U;
 }
 
 void myproject::thread_ap_var_for_const0() {

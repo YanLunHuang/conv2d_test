@@ -116,7 +116,7 @@ module AESL_deadlock_detector (
         .token_out_vec(token_out_vec_1),
         .dl_detect_out(dl_in_vec[1]));
 
-    assign proc_dep_vld_vec_1[0] = dl_detect_out ? proc_dep_vld_vec_1_reg[0] : (~AESL_inst_myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0.res_V_V_blk_n | (~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U.if_full_n & AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_done));
+    assign proc_dep_vld_vec_1[0] = dl_detect_out ? proc_dep_vld_vec_1_reg[0] : (~AESL_inst_myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0.res_V_V_blk_n | (~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U.if_full_n & AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_done));
     assign proc_dep_vld_vec_1[1] = dl_detect_out ? proc_dep_vld_vec_1_reg[1] : (((AESL_inst_myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0_ap_ready_count[0]) & AESL_inst_myproject.zeropad2d_cl_me_ap_fixed_ap_fixed_config4_U0.ap_idle & ~(AESL_inst_myproject.Block_proc_U0_ap_ready_count[0])));
     always @ (negedge reset or posedge clock) begin
         if (~reset) begin
@@ -165,7 +165,7 @@ module AESL_deadlock_detector (
         .token_out_vec(token_out_vec_2),
         .dl_detect_out(dl_in_vec[2]));
 
-    assign proc_dep_vld_vec_2[0] = dl_detect_out ? proc_dep_vld_vec_2_reg[0] : (~AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.data_V_V_blk_n | (~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U.if_empty_n & (AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_ready | AESL_inst_myproject$conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0$ap_idle)));
+    assign proc_dep_vld_vec_2[0] = dl_detect_out ? proc_dep_vld_vec_2_reg[0] : (~AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.data_V_V_blk_n | (~AESL_inst_myproject.start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conirb_U.if_empty_n & (AESL_inst_myproject.conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0.ap_ready | AESL_inst_myproject$conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0$ap_idle)));
     always @ (negedge reset or posedge clock) begin
         if (~reset) begin
             proc_dep_vld_vec_2_reg <= 'b0;
